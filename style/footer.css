@@ -1,0 +1,52 @@
+
+
+body{
+    text-align: left;
+    /* font-size: 1.6rem; */
+    font-family: 'Times New Roman', Times, serif;
+}
+.footer-section {
+    display: flex;
+    justify-content: left;
+    border-top: 1px solid rgb(95, 91, 91);
+    /* background-color: rgb(180, 180, 178); */
+    margin-bottom: 0px;
+    margin-top: 1%;
+    padding-top: 0.2rem;
+    margin-left: 0%;
+    vertical-align: baseline;
+  }
+
+  #div1{
+    padding: 1%;
+    /* border: 2px solid red; */
+    width: 25%;
+  }
+
+
+  #div2{
+    padding: 1%;
+    /* border: 2px solid rgb(86, 193, 238); */
+    width: 25%;
+  }
+
+
+  #div3{
+    padding: 1%;
+    /* border: 2px solid rgb(209, 234, 23); */
+    width: 25%;
+  }
+
+  #div4{
+    padding: 1%;
+    /* border: 2px solid rgb(41, 2, 9); */
+    width: 25%;
+  }
+
+  .Sing_up{
+    font-size: 1rem;
+  }
+
+  .Sing_up2{
+    font-size: .6rem;
+  }

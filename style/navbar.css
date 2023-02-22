@@ -1,0 +1,39 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+#container_nav{
+    display: flex;
+}
+.logo_div{
+    width: 30%;
+    margin-left: 2%;
+    /* border: 2px solid rgb(242, 9, 9); */
+}
+#nav{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    align-items: center;
+}
+.flexed{
+    display: flex;
+    /* justify-content: center; */
+}
+
+.Atitle{
+    text-decoration: none;
+}
+
+#LOGO{
+    border: none;
+    /* backface-visibility: visible; */
+    background-color: transparent;
+    font-family: 'Styrene',Helvetica,Arial,sans-serif;
+    width: 70%;
+}
+
+.Logo_a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
