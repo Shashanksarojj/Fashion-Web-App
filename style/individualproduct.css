@@ -1,0 +1,157 @@
+*{
+    margin: 0px;
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+#main{
+    display: flex;
+    /* height: 200vh; */
+}
+#proimg{
+    width: 50%;
+    /* border: 1px solid; */
+}
+#proimg img{
+    width: 100%;
+}
+#details{
+    width: 50%;
+    /* border: 1px solid red; */
+    margin-left: 20px;
+    height: 100vh;
+    position: sticky;
+    top: 0px;
+}
+#path{
+    display: flex;
+    /* border: 1px solid; */
+    margin-top: 80px;
+}
+#path a{
+    color: black;
+    font-size: 25px;
+    padding-right: 10px;
+    text-decoration: none;
+   
+}
+#path2{
+    border-left: 2px solid;
+    padding-left: 10px;
+}
+#name{
+    margin-top: 20px;
+}
+#color{
+    margin-top: 20px;
+    font-size: 25px;
+}
+#colorbutton button{
+    width: 30px;
+    height: 30px;
+    border-radius: 25px;
+    border: 0px;
+    margin-top: 15px;
+}
+#colorbutton button:nth-child(1){
+    background-color: black;
+    
+}
+#colorbutton button:nth-child(2){
+    background-color: rgb(40, 16, 224);
+    
+}
+#colorbutton button:nth-child(3){
+    background-color: rgb(238, 242, 131);
+    
+}
+#size{
+    display: flex;
+    /* border: 1px solid; */
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#size p:nth-child(2){
+margin-left: 20px;
+}
+#sizebutton{
+    /* border: 1px solid; */
+}
+.size{
+    width: 60px;
+    height: 38px;
+    margin-right: 10px;
+    border: 0px;
+    background-color: white;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    font-size: 20px;
+
+}
+.parchase{
+    border:0px;
+    width: 80%;
+    height: 40px;
+    font-size: larger;
+    background-color: black;
+    color: white;
+}
+#parchasediv{
+    text-align: center;
+    margin-top: 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(168, 163, 163);
+}
+#prodetails{
+    margin-top: 30px;
+}
+#prodetails1{
+    font-size: 20px;
+}
+#prodetails p{
+    margin-top: 20px;
+}
+#more{
+    margin-top: 20px;
+}
+#colordiv{
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(168, 163, 163);
+    border-top: 1px solid rgb(168, 163, 163);
+    margin-top: 20px;
+
+}
+.buy{
+    color: rgb(14, 226, 14);
+}
+
+
+#trending{
+    height: 110px;
+    /* margin-top: 100px; */
+    width: 100%;
+    text-align: center;
+}
+#trending h4{
+    margin-top: 50px;
+    font-size: 25px;
+    padding-top: 40px;
+}
+#trendProduct{
+    height: 350px;
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width:100%;
+    
+}
+
+.productDiv{
+    /* border: 2px solid; */
+    min-width: 350px;
+    height: 350px;
+}
+#trendProduct::-webkit-scrollbar{
+    display: none;
+}
+.productDiv img{
+    width: 100%;
+}
