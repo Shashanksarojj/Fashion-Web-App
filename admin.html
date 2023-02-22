@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Admin Page</title>
+  <link rel="stylesheet" href="./script/admin.css">
+  <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+</head>
+
+<body>
+
+  <section id="menu">
+    <div class="logo">
+      <h2>BURBERRY</h2>
+
+    </div>
+
+    <div class="items">
+      <li><i class="fa-solid fa-chart-pie"></i><a href="#">Dashboard</a></li>
+      <li><i class="fa-solid fa-rotate-right"></i><a href="#">Elements</a></li>
+      <li><i class="fa-solid fa-table"></i><a href="#">Table</a></li>
+      <li><i class="fa-brands fa-wpforms"></i><a href="#">Forms</a></li>
+      <li><i class="fa-regular fa-credit-card"></i><a href="#">Card</a></li>
+
+    </div>
+
+  </section>
+
+  <!-- interface -->
+
+  <section id="interface">
+    <div class="navigation">
+      <div class="ni">
+        <div>
+          <i id="menu-btn" class="fa-brands fa-usb "></i>
+        </div>
+        <div class="search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <input type="text" placeholder="Search products">
+        </div>
+      </div>
+
+      <div class="profile">
+        <div>
+          <i id="bell-icon" class="fa-regular fa-bell"></i>
+
+        </div>
+        <div>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIWNTiq9IDokwKAKD68rWcfvb_790X2MOxIA&usqp=CAU"
+            alt="">
+
+        </div>
+      </div>
+    </div>
+    <h3 class="i-name">
+      Dashboard
+    </h3>
+
+    <div class="values">
+      <div class="val-box">
+        <i class="fa-solid fa-users"></i>
+        <div>
+          <h3>8,267</h3>
+          <span>New Users</span>
+        </div>
+
+      </div>
+      <div class="val-box">
+        <i class="fa-solid fa-cart-shopping"></i>
+        <div>
+          <h3>8,267</h3>
+          <span>Total Orders</span>
+        </div>
+
+      </div>
+      <div class="val-box">
+        <i class="fa-solid fa-shop"></i>
+        <div>
+          <h3>8,267</h3>
+          <span>Total Products</span>
+        </div>
+
+      </div>
+      <div class="val-box">
+        <i class="fa-sharp fa-solid fa-dollar-sign"></i>
+        <div>
+          <h3>8,267</h3>
+          <span>Total Earnings</span>
+        </div>
+
+      </div>
+    </div>
+    <div class="board">
+      <table width="100%">
+        <thead>
+          <tr>
+            <td>Name</td>
+            <td>Title</td>
+            <td>Status</td>
+            <td>Role</td>
+            <td></td>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="people">
+              <img src="https://c1.staticflickr.com/7/6178/6140989632_1c8066563d_b.jpg" alt="">
+              <div class="people-de">
+                <h5>John Doe</h5>
+                <p>John@example.com</p>
+              </div>
+            </td>
+            <td class="people-des">
+              <h5>Software Engineer</h5>
+              <p>Web dev</p>
+            </td>
+
+
+            <td class="active">
+              <p>Active</p>
+            </td>
+
+            <td class="role">
+              <p>Owner</p>
+            </td>
+
+            <td class="edit"><a href="#">Edit</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+  </section>
+
+  <script>
+    $('#menu-btn').click(function(){
+      $('#menu').toggleClass("active");
+    })
+  </script>
+
+</body>
+
+</html>
