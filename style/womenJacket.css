@@ -1,0 +1,33 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0px;
+}
+#title{
+    /* border: 1px solid red; */
+    text-align: center;
+    height: 150px;
+}
+#title h3{
+    margin-top:30px;
+}
+#filterdiv{
+    /* border: 1px solid; */
+    height: 40px;
+    padding-bottom: 20px;
+}
+#main{
+    width: 100%;
+    /* border: 1px solid rgb(47, 0, 255); */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2px;
+    margin-top: 5px;
+}
+.card img{
+    width: 100%;
+}
+.card h4{
+    text-align: center;
+    margin-top:15px;
+    margin-bottom: 15px;
+}
