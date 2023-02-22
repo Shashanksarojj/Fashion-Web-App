@@ -1,0 +1,120 @@
+body{
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+#Login_image{
+    width: 100%;
+}
+#Login_image img{
+    width: 100%;
+}
+.page{
+    font: 35px/40px 'Apercu Bold',Helvetica,Arial,Sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    word-spacing: normal;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    left: 0;
+    color: rgba(255, 255, 255, 0.938);
+    text-align: center;
+    transform: translateY(-40%);
+    font-weight: 540;
+}
+#Register{
+    width: 70%;
+    margin: auto;
+    background-color: #f7f7f7;
+    position: relative;
+    top: 30px;
+    bottom: 30px;
+    margin-bottom: 30px;
+    padding-right: 30px;
+}
+#Register-container{
+    margin: 15px;   
+}
+#Register-container>div{
+    display: flex;
+    padding: 8px;
+    justify-content: space-between;
+}
+#textreg{
+    padding: 20px;
+    
+}
+#req{
+    margin-right: 12px;
+    height: 70px;
+    margin-top: 19px;
+    font-size: small;
+}
+#plz{
+    width: 96%;
+    padding: 0;
+   
+    margin: auto;
+}
+#plz p{
+    width: 100%;
+    margin-right:20px ;
+    font-size: 12px;
+}
+form {
+    width: 100%;
+    margin-left: 20px;
+    padding-right: 25px;
+  }
+  
+  form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+form input {
+    width: 98.5%; 
+    padding: 7px;
+    height: 22px;
+    border: none;
+    border: 1px solid gray;
+    outline: none;
+  }
+  form select{
+    width: 100%;
+    padding: 7px;
+    border: none;
+    height: 42px;
+    border: 1px solid gray;
+    outline: none;
+  }
+  input[type="submit"] {
+    width: 100%;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    font-size: 18px;
+  }
+  #term{
+    display: flex;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+  #term>div:nth-child(1)>p{
+    margin-right: 10px;
+  }
+  #desc_signup{
+    padding: 12px;
+    margin-top: 24px;
+    margin-bottom: 15px;
+    background-color: #dddddd;
+  }
+  #Register-form{
+    height: 1000px;
+    margin: 15px;
+  }
+  #ald{
+    color: black;
+    font-size:16px;
+  }
