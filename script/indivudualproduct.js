@@ -18,7 +18,10 @@ addtocart.addEventListener("click",()=>{
     if(add.length==0){
         add.push(item)
         localStorage.setItem("cart",JSON.stringify(add))
+        addtocart.innerText="Go to cart"
+        addtocart.classList.add("buy")
     }
+    else{
     for(let i=0;i<add.length;i++){
         if(add[i]!=item){
             x=true
@@ -40,6 +43,7 @@ addtocart.addEventListener("click",()=>{
     else{
         window.location.href="./cart.html"
     }
+}
 })
 
 let imgdiv=document.getElementById("proimg")
