@@ -50,6 +50,7 @@ let imgdiv=document.getElementById("proimg")
 let path1=document.getElementById("path1")
 let path2=document.getElementById("path2")
 let namediv=document.getElementById("name")
+let pricediv=document.getElementById("price")
 
 let y=null
 let elementdata=[]
@@ -79,7 +80,9 @@ async function product(){
             let name=document.createElement("h3")
             name.innerText=element.name
             namediv.append(name)
-            
+            let price=document.createElement("h4")
+            price.innerText=`$ ${element.price}`
+            pricediv.append(price)
 
 
         });

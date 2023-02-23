@@ -28,6 +28,11 @@ async function jacket(){
               namediv.setAttribute("class","namediv")
               let name=document.createElement("h4")
               name.innerText=element.name
+              let pricediv=document.createElement("div")
+              pricediv.setAttribute("class","pricediv")
+              let price=document.createElement("h5")
+              price.innerText=element.price
+              pricediv.append(price)
                
               card.addEventListener("click",()=>{
                       localStorage.setItem("element",element.id)
@@ -37,7 +42,7 @@ async function jacket(){
 
               namediv.append(name)
               imgdiv.append(img)
-              card.append(imgdiv,namediv)
+              card.append(imgdiv,namediv,pricediv)
               main.append(card)
 
 
