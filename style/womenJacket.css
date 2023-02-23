@@ -10,11 +10,6 @@
 #title h3{
     margin-top:30px;
 }
-#filterdiv{
-    /* border: 1px solid; */
-    height: 40px;
-    padding-bottom: 20px;
-}
 #main{
     width: 100%;
     /* border: 1px solid rgb(47, 0, 255); */
@@ -30,4 +25,128 @@
     text-align: center;
     margin-top:15px;
     margin-bottom: 15px;
+}
+
+.pricediv h5{
+    margin-left: 28px;
+
+}
+#filterdiv{
+    width: 98%;
+    margin: auto;
+    border-top: 1px solid grey;
+    border-bottom: 1px solid gray;
+    height: 40px;
+    display: flex;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+#sortandfilter{
+     display: flex;
+     /* justify-content: space-between; */
+     /* border: 1px solid blue; */
+     width: 50%;
+}
+#sort{
+    width: 11%;
+    margin-left: 10px;
+    font-weight: bold;
+    display: flex;
+    margin-top: 10px;
+}
+#sort p{
+    padding-top: 3px;
+}
+#sortdiv{
+    /* border: 1px solid; */
+    display: block;
+    margin-right: 80px;
+}
+#sort p:hover{
+    font-size: 16.5px;
+    color: rgb(55, 4, 4);
+}
+#filter{
+   display: flex;
+    margin-left: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+#filter p{
+    padding-top: 3px;
+}
+.downSymbol {
+    /* border: 1px solid; */
+    margin-right: 5px;
+    
+}
+#lowtohigh{
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight:bold;
+    font-size: 15px;
+    color: rgb(68, 67, 67);
+    border-bottom: 1px solid;
+    width:80%;
+    /* border: 1px solid; */
+}
+#hightolow{
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight:bold;
+    font-size: 15px;
+    color: rgb(68, 67, 67);
+    border-bottom: 1px solid;
+    width: 80%;
+}
+#default{
+    margin-left: 30px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight:bold;
+    font-size: 15px;
+    color: rgb(68, 67, 67);
+    border-bottom: 1px solid;
+    width: 80%;
+}
+.rotate180 {
+    transform : rotate(180deg);
+    color: rgb(151, 101, 226);
+    font-size: 30px;
+  }
+#tagfilterdiv{
+    /* border: 1px solid; */
+    display: block;
+    width: 230px;
+    margin-left: 20px;
+    
+}
+#trendingproduct{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight:bold;
+    font-size: 15px;
+    color: rgb(68, 67, 67);
+    border-bottom: 1px solid;
+    width: 65%;
+}
+#filterdefault{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight:bold;
+    font-size: 15px;
+    color: rgb(68, 67, 67);
+    border-bottom: 1px solid;
+    width: 65%;
+}
+#newproduct{
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-weight:bold;
+    font-size: 15px;
+    color: rgb(68, 67, 67);
+    border-bottom: 1px solid;
+    width: 65%;
 }
