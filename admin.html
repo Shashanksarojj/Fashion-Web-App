@@ -9,7 +9,7 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Admin Page</title>
-  <link rel="stylesheet" href="./script/admin.css">
+  <link rel="stylesheet" href="./style/admin.css">       
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 
 </head>
@@ -101,15 +101,16 @@
       <table width="100%">
         <thead>
           <tr>
-            <td>Name</td>
-            <td>Title</td>
-            <td>Status</td>
-            <td>Role</td>
-            <td></td>
+            <th>Title</th>
+            <th>Category</th>
+            <th>price</th>
+            <th>Status</th>
+            <th>Delete</th>
           </tr>
+
         </thead>
         <tbody>
-          <tr>
+          <!-- <tr>
             <td class="people">
               <img src="https://c1.staticflickr.com/7/6178/6140989632_1c8066563d_b.jpg" alt="">
               <div class="people-de">
@@ -120,9 +121,9 @@
             <td class="people-des">
               <h5>Software Engineer</h5>
               <p>Web dev</p>
-            </td>
+            </td> -->
 
-
+<!-- 
             <td class="active">
               <p>Active</p>
             </td>
@@ -132,7 +133,7 @@
             </td>
 
             <td class="edit"><a href="#">Edit</a></td>
-          </tr>
+          </tr> -->
         </tbody>
       </table>
     </div>
@@ -140,7 +141,7 @@
   </section>
 
   <script>
-    $('#menu-btn').click(function(){
+    $('#menu-btn').click(function () {
       $('#menu').toggleClass("active");
     })
   </script>
@@ -148,3 +149,6 @@
 </body>
 
 </html>
+
+
+<script src="./script/admin.js"></script>
