@@ -1,10 +1,13 @@
-
+*{
+  font-family: "Times New Roman", Times, serif;
+  margin: 0px;
+}
 .nav {
     /* height: 50px; */
     
     padding: 2%;
     padding-bottom: 1%;
-    width: 97%;
+    /* width: 97%; */
     color: #b90c0c;
     background-color: #504d4d;
     position: relative;
@@ -107,10 +110,7 @@
 
 
 
-*{
-    font-family: "Times New Roman", Times, serif;
-    margin: 0px;
-}
+
 #title{
     /* border: 1px solid; */
     width: 100%;
