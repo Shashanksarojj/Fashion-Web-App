@@ -9,15 +9,17 @@ let main1=document.getElementById("main1")
  let item=JSON.parse(localStorage.getItem("cart"))||null
 for(let i=0;i<item.length;i++){
 
-
+itemData=[]
 async function jacket(){
     try{
        let res=await fetch(`${url}/${item[i]}`)
        .then(res=>res.json())
        .then(data=>{
         console.log(data)
-        data.forEach((element) => {
-           if(element.gender=="men"&&element.category=="clothing"){
+        itemData.push(data)
+        console.log(itemData)
+        itemData.forEach((element) => {
+          // if(element.gender=="men"&&element.category=="clothing"){
               let card=document.createElement("div")
               card.setAttribute("class","card")
               let imgdiv=document.createElement("div")
@@ -35,10 +37,10 @@ async function jacket(){
               let name=document.createElement("h4")
               name.innerText=element.name
                
-              card.addEventListener("click",()=>{
-                      localStorage.setItem("cart",element.id)
-                      window.location.href="./individualproduct.html"
-              })
+            //   card.addEventListener("click",()=>{
+            //           localStorage.setItem("cart",element.id)
+            //           window.location.href="./individualproduct.html"
+            //   })
 
 
               namediv.append(name)
@@ -47,9 +49,9 @@ async function jacket(){
               main1.append(card)
 
 
-           }
+           
 
-        });
+        })
        })
     }
     catch(error){
