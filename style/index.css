@@ -149,6 +149,15 @@ img {
   /* margin-bottom: 4px; */
 }
 
+.fa_1{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.fa_1 > h1:hover{
+color: #5a5858;
+}
+
 .footer-section {
   display: flex;
   justify-content: left;
