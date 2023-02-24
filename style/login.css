@@ -1,0 +1,118 @@
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#Login_image{
+    width: 100%;
+}
+#Login_image img{
+    width: 100%;
+}
+.page{
+    font: 35px/40px 'Apercu Bold',Helvetica,Arial,Sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    word-spacing: normal;
+    position: absolute;
+    top: 15%;
+    right: 0;
+    left: 0;
+    color: rgba(255, 255, 255, 0.938);
+    text-align: center;
+    transform: translateY(-40%);
+    font-weight: 540;
+}
+#Register{
+    width: 50%;
+    margin: auto;
+    background-color: #f7f7f7;
+    position: relative;
+    top: 30px;
+    bottom: 30px;
+    margin-bottom: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+}
+#Register-container{
+    margin: 15px;   
+}
+#Register-container>div{
+    padding: 8px;
+    width: 96%;
+}
+#textreg{
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 2px;
+}
+
+#plz{
+    width: 100%;
+    margin: auto;
+}
+#plz p{
+    width: 98%;
+    font-size: 12px;
+    margin: auto;
+}
+form {
+    width: 100%;
+    margin-left: 20px;
+    padding-right: 25px;
+  }
+  form p{
+    font-size: 9px;
+    margin-top: 12px;
+  }
+  
+  form label {
+    display: flex;
+    margin-top: 20px;
+    font-size: 18px;
+  }
+  form input {
+    width: 91%; 
+    padding: 7px;
+    height: 22px;
+    margin-top: 15px;
+    border: none;
+    border: 1px solid gray;
+    outline: none;
+  }
+  input[type="submit"] {
+    width: 93%;
+    height: 35px;
+    margin-top: 13px;
+    border: none;
+    background-color: #000000;
+    border: 2px solid red;
+    color: white;
+    font-size: 18px;
+  }
+  #Register-form{
+    height: 430px;
+    margin: 15px;
+  }
+  #ald{
+    color: black;
+    font-size:13px;
+  }
+  #forgot{
+    display: flex;
+    width: 92%;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
