@@ -91,6 +91,10 @@
     width:80%;
     /* border: 1px solid; */
 }
+#lowtohigh:hover{
+    color:black;
+    font-size: 16px;
+}
 #hightolow{
     margin-left: 30px;
     margin-top: 5px;
@@ -100,6 +104,10 @@
     color: rgb(68, 67, 67);
     border-bottom: 1px solid;
     width: 80%;
+}
+#hightolow:hover{
+    color:black;
+    font-size: 16px;
 }
 #default{
     margin-left: 30px;
@@ -111,6 +119,10 @@
     border-bottom: 1px solid;
     width: 80%;
 }
+#default:hover{
+    color:black;
+    font-size: 16px;
+}
 .rotate180 {
     transform : rotate(180deg);
     color: rgb(151, 101, 226);
@@ -121,7 +133,10 @@
     display: block;
     width: 230px;
     margin-left: 20px;
-    
+}
+#filter p:hover{
+    font-size: 16.5px;
+    color: rgb(55, 4, 4);
 }
 #trendingproduct{
     margin-top: 5px;
@@ -132,6 +147,11 @@
     border-bottom: 1px solid;
     width: 65%;
 }
+#trendingproduct:hover{
+    color:black;
+    font-size: 16px;
+}
+
 #filterdefault{
     margin-top: 5px;
     margin-bottom: 10px;
@@ -140,6 +160,10 @@
     color: rgb(68, 67, 67);
     border-bottom: 1px solid;
     width: 65%;
+}
+#filterdefault:hover{
+    color:black;
+    font-size: 16px;
 }
 #newproduct{
     margin-top: 5px;
@@ -150,3 +174,107 @@
     border-bottom: 1px solid;
     width: 65%;
 }
+#newproduct:hover{
+    color:black;
+    font-size: 16px;
+}
+#mobile{
+    /* border: 1px solid; */
+    width: 30px;
+    height:30px;
+    padding-top: 5px;
+    display: none;
+}
+.hamburger{
+    width: 100%;
+    border: 3px solid rgb(242, 183, 106);
+    border-radius: 6px;
+    margin-bottom: 4px;
+}
+#mobilediv{
+    /* border: 1px solid; */
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    width: 800%;
+    height: 540px;
+    position: relative;
+    background-color: rgb(248, 252, 255);
+    z-index: 1;
+    border-radius: 5px;
+
+}
+
+@media screen and (min-width:475px) and (max-width:820px){
+    #sort{
+        width: 19%;
+        margin-left: 10px;
+        font-weight: bold;
+        display: flex;
+        margin-top: 10px;
+    }
+    .card h4{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top:15px;
+        font-size: 10px;
+    }
+    .pricediv h5{
+        margin-left: 15px;
+        font-size: 10px;
+    
+    }
+}
+@media screen and (max-width:475px) {
+    #main{
+        width: 100%;
+        /* border: 1px solid rgb(47, 0, 255); */
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 2px;
+        margin-top: 5px;
+    }
+    .card h4{
+        text-align: center;
+        margin-bottom: 15px;
+        margin-top:15px;
+        font-size: 10px;
+    }
+    #title p{
+        font-size: 13px;
+    }
+    #title{
+        /* border: 1px solid red; */
+        text-align: center;
+        height: 100px;
+    }
+    #filterdiv{
+        display:none;
+    } #mobile{
+        display: block;
+    }
+    #mobilesort{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+        height: 20px;
+    }
+    #mobilesortone h4{
+        margin-top: 10px;
+        color: rgb(106, 105, 105);
+    }
+    #mobilesortone h4:hover{
+        background-color: rgb(173, 176, 177);
+    }
+    #mobilefilter{
+      margin-top: 80px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+      height: 20px;
+
+    }
+    #mobilefilterone h4:hover{
+        background-color: rgb(173, 176, 177);
+    }
+    #mobilefilterone h4{
+        margin-top: 10px;
+        color: rgb(106, 105, 105);
+    }
+}
+
+

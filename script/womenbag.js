@@ -29,7 +29,7 @@ function render(prodata){
          let pricediv=document.createElement("div")
          pricediv.setAttribute("class","pricediv")
          let price=document.createElement("h5")
-         price.innerText=element.price
+         price.innerText=`$ ${element.price}`
          pricediv.append(price)
           
          card.addEventListener("click",()=>{
@@ -112,8 +112,6 @@ sort.addEventListener("click",()=>{
       down.classList.remove("rotate180")
      
    }
-   
-
 })
 
 // filter dropdown..............
@@ -164,4 +162,82 @@ filter.addEventListener("click",()=>{
       downtwo.classList.remove("rotate180")
    }
 
+})
+let mobile=document.getElementById("mobile")
+let mobilechild=document.getElementById("mobilechild")
+let count3=0
+mobile.addEventListener("click",()=>{
+   count3++
+   console.log(count3,"3")
+   if(count3%2!==0){
+   let mobilediv=document.createElement("div")
+   mobilediv.setAttribute("id","mobilediv")
+   let mobilesort=document.createElement("div")
+   mobilesort.setAttribute("id","mobilesort")
+   mobilesort.innerText="SORT BY PRICE"
+   let  mobilesortone=document.createElement("div")
+   mobilesortone.setAttribute("id","mobilesortone")
+   let mobilel2h=document.createElement("h4")
+   let mobileh2l=document.createElement("h4")
+   let mobiledefault=document.createElement("h4")
+   mobilel2h.innerText="Sort low to high"
+   mobileh2l.innerText="Sort high to low"
+   mobiledefault.innerText="Default"
+    mobilel2h.addEventListener("click",(e)=>{
+      e.stopPropagation()
+      console.log("yes")
+      let sorted_data=products.sort((a,b)=>a.price-b.price)
+      render(sorted_data)
+    })
+    mobileh2l.addEventListener("click",(e)=>{
+      e.stopPropagation()
+      console.log("yes2")
+      let sorted_data=products.sort((a,b)=>b.price-a.price)
+      render(sorted_data)
+   })
+
+   let mobilefilter=document.createElement("div")
+   mobilefilter.setAttribute("id","mobilefilter")
+   mobilefilter.innerText="FILTER BY.."
+   let mobilefiltertone=document.createElement("div")
+   mobilefiltertone.setAttribute("id","mobilefilterone")
+    let mobiletrending=document.createElement("h4")
+    let mobilenew=document.createElement("h4")
+    let mobilefilterdefault=document.createElement("h4")
+    mobilefilterdefault.innerText="Default"
+    mobilenew.innerText="Newly launched"
+    mobiletrending.innerText="Trenging items"
+    mobilefilterdefault.addEventListener("click",(e)=>{
+      e.stopPropagation()
+      render(products)
+   })
+   mobilenew.addEventListener("click",(e)=>{
+      e.stopPropagation()
+      let filterd_data = products.filter((ele)=>{
+         return ele.tag == "new"
+     })
+     render(filterd_data)
+   })
+   mobiletrending.addEventListener("click",(e)=>{
+      e.stopPropagation()
+      let filterd_data = products.filter((ele)=>{
+         return ele.tag == "trending"
+     })
+     render(filterd_data)
+   })
+   
+
+   mobilesortone.append(mobiledefault,mobilel2h,mobileh2l)
+    mobilesort.append(mobilesortone)
+    
+    mobilefiltertone.append(mobilefilterdefault,mobilenew,mobiletrending)
+    mobilefilter.append(mobilefiltertone)
+
+
+   mobilediv.append(mobilesort,mobilefilter)
+   mobilechild.append(mobilediv)
+   }
+   else{
+      mobilechild.innerHTML=null
+   }
 })
