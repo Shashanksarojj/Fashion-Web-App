@@ -1,0 +1,28 @@
+table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  th {
+    background-color: #ddd;
+  }
+  
+  #promo-code label {
+    display: block;
+  }
+  
+  #promo-code input {
+    margin-bottom: 16px;
+  }
+  
+  #checkout-button button {
+    font-size: 24px;
+    padding: 16px 32px;
+  
+  }
