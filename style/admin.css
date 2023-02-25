@@ -10,6 +10,10 @@ body{
     position: relative;
     display: flex;
 }
+
+
+
+
 #menu{
     background: #111827;
     width: 300px;
@@ -50,6 +54,9 @@ padding-top: 20px;
     font-size: 14px;
     margin: 0 10px 0 25px;
 }
+.text{
+    color: rgb(134, 141, 151);
+}
 
 #menu .items li:hover i,#menu .items li:hover a{
     color: #f3f4f6;
@@ -61,6 +68,63 @@ padding-top: 20px;
     font-weight: 300px;
     transition: 0.3s ease;
 }
+hr{
+    border: 0.5px solid rgb(115, 115, 115);
+    background-color: rgb(105, 105, 105);
+}
+.checkbox{
+    appearance: none;
+    position: relative;
+    background-color: rgb(216, 216, 216);
+    height: 1.6rem;
+    width: 3rem;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+#dark-toggle{
+    margin-left: 0.5rem;
+    width: 17rem;
+   
+}
+#dark-toggle:hover{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+#toggletext{
+    margin-left: 0.8rem;
+    margin-right: 5.7rem;
+}
+.checkbox::before{
+    content: "";
+    height: 1.2rem;
+    width: 1.4rem;
+    background-color: black;
+    border-radius: 50%;
+    transition: 0.3s ease;
+    position: absolute;
+    top: 2px;
+    left: 3px;
+}
+.checkbox:checked{
+    background-color: rgb(105, 105, 105);
+}
+.checkbox:checked::before{
+    left:calc(3rem - 1.4rem)
+}
+.dark{
+    background-color: rgb(17, 17, 17);
+}
+.middark{
+    background-color: rgb(45, 45, 45);
+}
+.color{
+    color: white;
+}
+.searchcolor{
+    color: rgb(38, 38, 38);
+}
+
 #interface{
     width: calc(100% - 300px);
     margin-left: 300px;
@@ -80,6 +144,19 @@ padding-top: 20px;
    
 
 }
+
+.dark-toggle{
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.4rem;
+    width: 16rem;
+    cursor: pointer;
+    padding-left: 0.5rem;
+    font-size: 1.1rem;
+}
+
 #interface .navigation{
     display: flex;
     align-items: center;
@@ -117,13 +194,27 @@ padding-top: 20px;
     cursor: pointer;
     margin-right: 20px;
 }
+#btn{
+    display: block;
+    margin: auto;
+    margin-left: 900px;
+    padding: 5px 10px;
+   color: #111827;
+   font-weight: 600;
+   background-color: chartreuse;
+   border: none;
+   border-radius: 4px;
+   position: relative;
+   /* z-index: 5px; */
+    
+}
 
 .i-name{
     color: #444a53;
     padding: 30px 30px 0 30px;
     font-size: 24px;
     font-weight: 700;
-    margin-top: 70px;
+    margin-top: 120px;
 }
 .values {
     padding: 30px 30px 0 30px;
@@ -207,17 +298,25 @@ table {
 tr {
     border-bottom: 1px solid #eef0f3;
 }
-thead td {
+thead th {
     font-size: 14px;
     text-transform: uppercase;
-    font-weight: 400;
+    font-weight: 700;
     background: #f9fafb;
     text-align: start;
     padding: 15px;
+    color: black;
+
+}
+#td4{
+    color: green;
+    
 }
 tbody tr td {
     padding: 10px 15px;
 }
+
+
 
 @media (max-width: 769px) {
     #menu{
@@ -267,6 +366,19 @@ tbody tr td {
         width: 100%;
         border-collapse: collapse;
     }
+    #btn{
+        display: block;
+        margin: auto;
+        /* margin-left: 970px; */
+        padding: 5px 10px;
+       color: #111827;
+       font-weight: 600;
+       background-color: chartreuse;
+       border: none;
+       border-radius: 4px;
+       position: relative;
+        
+    }
 }
 @media (max-width: 477px) {
     #interface .navigation{
@@ -289,3 +401,55 @@ tbody tr td {
         margin: 30px 15px 30px 15px;
     }
 }
+.formpop{
+    display: none;
+    position: fixed;
+    bottom: 0px;
+    top: 0px;
+    right: 15px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+.formcontent{
+    max-width: 300px;
+    padding: 10px;
+    background-color: white;
+
+}
+.formcontent input[type=text]:focus{
+background-color: #ddd;
+outline: none;
+}
+.formcontent input[type=text]{
+    width:100%;
+    padding:15px;
+    margin: 5px 0px 22px 0px;
+    border: none;
+    background: #f1f1f1;
+}
+.formcontent .btns{
+background-color: #04aa6d;
+color: white;
+padding: 16px 20px;
+border:none;
+cursor: pointer;
+width: 100%;
+margin-bottom: 10px;
+opacity: 0.8;
+}
+.formcontent .btns:hover{
+opacity: 1;
+}
+.formcontent .update-btns{
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px 20px;
+    border:none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    }
+    .formcontent .update-btns:hover{
+    opacity: 1;
+    }

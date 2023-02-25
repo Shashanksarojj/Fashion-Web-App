@@ -5,14 +5,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login&signup</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Signup</title>
     <link rel="stylesheet" href="./style/signup.css">
 </head>
 
 <body>
-    <div id="Navbar">
 
-    </div>
+        <div id="container_nav" class="flexed">
+            <div class="logo_div">
+                <button id="LOGO">
+                    <a class="Logo_a" href="index.html" class="Logo_a" title="Burberry" aria-label="Click to return to the Burberry homepage"
+                        data-test="burberry-logo" class="anc" style="opacity:1;transform:none">
+                        <h1>Burberry</h1>
+                    </a>
+                </button>
+            </div>
+           
+            <nav id="nav" class="flexed">
+                <div>
+                    <a class="Atitle" href="./children.html">Womens</a>
+                </div> 
+                <div>   
+                    <a class="Atitle" href="./women.html">Cart</a>
+                </div> 
+                <div>   
+                    <a class="Atitle" href="./men.html">Contact Us</a>
+                </div>
+                <div>
+                    <form>
+                        <input placeholder="Search" type="text" id="search" />
+                    </form>
+                    
+                    
+                </div>
+                <i class="fa-solid fa-magnifying-glass">
+                </i>
+                <div>
+                    <a class="Atitle" href="./login.html">Login</a>
+                </div>
+            </nav>
+        </div>
+
+
+<!-------------------------------------------------------- Navbar End --------------------------------------------------------------->
     <div id="Login_image">
         <img src="https://assets.burberry.com/is/image/Burberryltd/MyAccount.jpg?$BBY_V2_BASIC$&wid=1875&hei=375"
             alt="">
@@ -35,7 +71,7 @@
             </div>
         </div>
         <div id="Register-form">
-            <form>
+            <form id="form-signup">
                 <label>Location</label>
                 <select id="Location">
                     <option value=""></option>
@@ -120,6 +156,34 @@
             </form>
         </div>
     </div>
+    <!---------------------------------------------------------------- Fotter-start ---------------------------------------------------->
+   
+
+    <footer class="footer-section">
+        <div id="div1">
+            <p class="Sing_up">SIGN UP</p>
+            <p class="Sign_up2">Sign up below for updates about the world of Burberry, including
+                collection launches and early access to limited-edition products and collaborations.</p>
+            <form class="footer_form">
+                <input type="email" name="signup-email" value="" aria-label="Email" aria-invalid="false"
+                    class="footer_input">
+                <span class="">Email</span>
+            </form>
+        </div>
+        <div id="div2">
+            <p class="Sing_up">STORE LOCATOR</p>
+        </div>
+        <div id="div3">
+            <p class="Sing_up">CUSTOMER SERVICE</p>
+            <p class="Sing_up">LEGAL AND COOKIE</p>
+            <p class="Sing_up">OUR COMPANY</p>
+        </div>
+        <div id="div4">
+            <p class="Sing_up">LANGUAGE <br> English</p>
+            <p class="Sing_up">SHIPPING TO</p>
+        </div>
+
+    </footer>
 </body>
 <script src="./script/signup.js"></script>
 </html>

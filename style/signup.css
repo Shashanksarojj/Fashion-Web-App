@@ -1,6 +1,53 @@
 body{
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
+/* ------------Nav start--------------------------- */
+#container_nav{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+}
+.logo_div{
+    width: 30%;
+    margin-left: 2%;
+    /* border: 2px solid rgb(242, 9, 9); */
+}
+#nav{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    align-items: center;
+}
+.flexed{
+    display: flex;
+    /* justify-content: center; */
+}
+
+.Atitle{
+    text-decoration: none;
+}
+
+#LOGO{
+    border: none;
+    /* backface-visibility: visible; */
+    background-color: transparent;
+    font-family: 'Styrene',Helvetica,Arial,sans-serif;
+    width: 70%;
+}
+
+.Logo_a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+.fa-solid{
+  position: relative;
+  right: 55px;
+}
+
+/* ------------Nav End--------------------------- */
+
 #Login_image{
     width: 100%;
 }
@@ -71,7 +118,7 @@ form {
     margin-top: 20px;
     font-size: 18px;
   }
-form input {
+  form input {
     width: 98.5%; 
     padding: 7px;
     height: 22px;
@@ -94,6 +141,7 @@ form input {
     border: none;
     background-color: #000000;
     color: white;
+    cursor: pointer;
     font-size: 18px;
   }
   #term{
@@ -111,10 +159,59 @@ form input {
     background-color: #dddddd;
   }
   #Register-form{
-    height: 1000px;
+    height: 1120px;
     margin: 15px;
   }
   #ald{
     color: black;
     font-size:16px;
+  }
+
+  /* -----------------------Footer start--------------------- */
+
+  .footer-section {
+    display: flex;
+    justify-content: left;
+    border-top: 1px solid rgb(95, 91, 91);
+    /* background-color: rgb(180, 180, 178); */
+    margin-bottom: 30px;
+    margin-top: 11%;
+    padding-top: 0.2rem;
+    margin-left: 0%;
+    vertical-align: baseline;
+    background-color: #f7f7f7;
+  }
+
+  #div1{
+    padding: 1%;
+    /* border: 2px solid red; */
+    width: 25%;
+  }
+
+
+  #div2{
+    padding: 1%;
+    /* border: 2px solid rgb(86, 193, 238); */
+    width: 25%;
+  }
+
+
+  #div3{
+    padding: 1%;
+    /* border: 2px solid rgb(209, 234, 23); */
+    width: 25%;
+  }
+
+  #div4{
+    padding: 1%;
+    /* border: 2px solid rgb(41, 2, 9); */
+    width: 25%;
+  }
+
+  .Sing_up{
+    font-size: 1rem;
+  }
+
+  .Sing_up2{
+    font-size: .6rem;
   }
