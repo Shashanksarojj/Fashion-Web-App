@@ -10,6 +10,10 @@ body{
     position: relative;
     display: flex;
 }
+
+
+
+
 #menu{
     background: #111827;
     width: 300px;
