@@ -1,9 +1,53 @@
+
 let item=JSON.parse(localStorage.getItem("element"))||null
 
 let url="https://63f4671c3f99f5855daeb266.mockapi.io/products"
 
-
+let products=[]
 let main=document.getElementById("main")
+
+function render(prodata){
+   main.innerHTML=null
+   prodata.forEach((element) => {
+      if(element.gender=="men"&&element.category=="shoes"){
+         let card=document.createElement("div")
+         card.setAttribute("class","card")
+         let imgdiv=document.createElement("div")
+         imgdiv.setAttribute("class","imgdiv")
+         let img=document.createElement("img")
+         img.setAttribute("src",element.image[0])
+         img.addEventListener("mouseover",()=>{
+           img.setAttribute("src",element.image[1])
+         })
+         img.addEventListener("mouseout",()=>{
+           img.setAttribute("src",element.image[0])
+         })
+         let namediv=document.createElement("div")
+         namediv.setAttribute("class","namediv")
+         let name=document.createElement("h4")
+         name.innerText=element.name
+         let pricediv=document.createElement("div")
+         pricediv.setAttribute("class","pricediv")
+         let price=document.createElement("h5")
+         price.innerText=`$ ${element.price}`
+         pricediv.append(price)
+          
+         card.addEventListener("click",()=>{
+                 localStorage.setItem("element",element.id)
+                 window.location.href="./individualproduct.html"
+         })
+
+
+         namediv.append(name)
+         imgdiv.append(img)
+         card.append(imgdiv,namediv,pricediv)
+         main.append(card)
+
+
+      }
+
+   });
+}
 
 async function jacket(){
     try{
@@ -11,44 +55,9 @@ async function jacket(){
        .then(res=>res.json())
        .then(data=>{
         data.forEach((element) => {
-           if(element.gender=="men"&&element.category=="shoes"){
-              let card=document.createElement("div")
-              card.setAttribute("class","card")
-              let imgdiv=document.createElement("div")
-              imgdiv.setAttribute("class","imgdiv")
-              let img=document.createElement("img")
-              img.setAttribute("src",element.image[0])
-              img.addEventListener("mouseover",()=>{
-                img.setAttribute("src",element.image[1])
-              })
-              img.addEventListener("mouseout",()=>{
-                img.setAttribute("src",element.image[0])
-              })
-              let namediv=document.createElement("div")
-              namediv.setAttribute("class","namediv")
-              let name=document.createElement("h4")
-              name.innerText=element.name
-              let pricediv=document.createElement("div")
-              pricediv.setAttribute("class","pricediv")
-              let price=document.createElement("h5")
-              price.innerText=element.price
-              pricediv.append(price)
-               
-              card.addEventListener("click",()=>{
-                      localStorage.setItem("element",element.id)
-                      window.location.href="./individualproduct.html"
-              })
-
-
-              namediv.append(name)
-              imgdiv.append(img)
-              card.append(imgdiv,namediv,pricediv)
-              main.append(card)
-
-
-           }
-
+           products.push(element)
         });
+        render(products)
        })
     }
     catch(error){
@@ -56,6 +65,7 @@ async function jacket(){
     }
 }
 jacket()
+
 
 // creating dropdown div for sort functionality .........
 let down=document.getElementById("downSymbol")

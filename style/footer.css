@@ -1,7 +1,7 @@
 
 
 body{
-    text-align: left;
+    /* text-align: left; */
     /* font-size: 1.6rem; */
     font-family: 'Times New Roman', Times, serif;
 }
@@ -27,6 +27,7 @@ body{
 
   #footer-div2{
     padding: 1%;
+    border-left: 1px solid rgb(95, 91, 91);
     /* border: 2px solid rgb(86, 193, 238); */
     width: 25%;
   }
@@ -34,12 +35,14 @@ body{
 
   #footer-div3{
     padding: 1%;
+    border-left: 1px solid rgb(95, 91, 91);
     /* border: 2px solid rgb(209, 234, 23); */
     width: 25%;
   }
 
   #footer-div4{
     padding: 1%;
+    border-left: 1px solid rgb(95, 91, 91);
     /* border: 2px solid rgb(41, 2, 9); */
     width: 25%;
   }

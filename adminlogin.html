@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <title>Admin login</title>
+    <link rel="stylesheet" href="./style/adminlogin.css">
+</head>
+
+<body>
+    <div id="container_nav" class="flexed">
+        <div class="logo_div">
+            <button id="LOGO">
+                <a class="Logo_a" href="index.html" class="Logo_a" title="Burberry"
+                    aria-label="Click to return to the Burberry homepage" data-test="burberry-logo" class="anc"
+                    style="opacity:1;transform:none">
+                    <h1>Burberry</h1>
+                </a>
+            </button>
+        </div>
+
+        <nav id="nav" class="flexed">
+            <div>
+                <a class="Atitle" href="./children.html">Womens</a>
+            </div>
+            <div>
+                <a class="Atitle" href="./women.html">Cart</a>
+            </div>
+            <div>
+                <a class="Atitle" href="./men.html">Contact Us</a>
+            </div>
+            <div>
+                <form>
+                    <input placeholder="Search" type="text" id="search" />
+
+                </form>
+
+            </div>
+            <i class="fa-solid fa-magnifying-glass">
+            </i>
+            <div>
+                <a class="Atitle" href="./login.html">Login</a>
+            </div>
+        </nav>
+    </div>
+    <!-- ------------------------Nav End------------------------------------------------- -->
+
+
+    <div id="Login_image">
+        <img src="https://assets.burberry.com/is/image/Burberryltd/MyAccount.jpg?$BBY_V2_BASIC$&wid=1875&hei=375"
+            alt="">
+        <h1 class="page">
+            <span tabindex="0">Admin Login</span>
+        </h1>
+    </div>
+    <div id="Register">
+        <div id="Register-container">
+            <div>
+                <h4 id="textreg">Welcome back admin,</h4>
+            </div>
+            <div id="plz">
+                <p>Please enter your email and password below to access your account</p>
+            </div>
+        </div>
+        <div id="Register-form">
+            <form>
+                <label>Admin Username</label>
+                <input type="text" id="email" placeholder="" />
+                <label>Admin Password</label>
+                <input type="password" id="Cpassword" placeholder="" />
+                <p>This site is protected by reCAPTCHA and the Google <u>Privacy Policy</u> and <u>Terms of Service</u>
+                    apply.</p>
+                <div id="forgot">
+                    <div><a href="./signup.html">
+                            <p id="ald">Not a admin</p>
+                        </a></div>
+                    <div><a href="./signup.html">
+                            <p id="ald">Forgotten Password</p>
+                        </a></div>
+                </div>
+                <input type="submit" value="Login" />
+            </form>
+        </div>
+    </div>
+
+     <!---------------------------------------------------------------- Fotter-start ---------------------------------------------------->
+   
+
+     <footer class="footer-section">
+        <div id="div1">
+            <p class="Sing_up">SIGN UP</p>
+            <p class="Sign_up2">Sign up below for updates about the world of Burberry, including
+                collection launches and early access to limited-edition products and collaborations.</p>
+            <form class="footer_form">
+                <input type="email" name="signup-email" value="" aria-label="Email" aria-invalid="false"
+                    class="footer_input">
+                <span class="">Email</span>
+            </form>
+        </div>
+        <div id="div2">
+            <p class="Sing_up">STORE LOCATOR</p>
+        </div>
+        <div id="div3">
+            <p class="Sing_up">CUSTOMER SERVICE</p>
+            <p class="Sing_up">LEGAL AND COOKIE</p>
+            <p class="Sing_up">OUR COMPANY</p>
+        </div>
+        <div id="div4">
+            <p class="Sing_up">LANGUAGE <br> English</p>
+            <p class="Sing_up">SHIPPING TO</p>
+        </div>
+
+    </footer>
+</body>
+<script src="./script/adminlogin.js"></script>
+
+</html>

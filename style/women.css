@@ -176,6 +176,58 @@
     width: 100%;
 }
 
+.footer-section {
+    display: flex;
+    justify-content: left;
+    border-top: 1px solid rgb(95, 91, 91);
+    text-align: left;
+    /* background-color: rgb(180, 180, 178); */
+    margin-bottom: 0px;
+    padding-top: 5%;
+    padding-top: 0.2rem;
+    margin-left: 0%;
+    vertical-align: baseline;
+  }
+
+  #footer-div1{
+    padding: 1%;
+    /* border: 2px solid red; */
+    /* border-left: 1px solid rgb(95, 91, 91); */
+    width: 25%;
+  }
+
+
+  #footer-div2{
+    padding: 1%;
+    /* border: 2px solid rgb(86, 193, 238); */
+    border-left: 1px solid rgb(95, 91, 91);
+
+    width: 25%;
+  }
+
+
+  #footer-div3{
+    padding: 1%;
+    /* border: 2px solid rgb(209, 234, 23); */
+    border-left: 1px solid rgb(95, 91, 91);
+    width: 25%;
+  }
+
+  #footer-div4{
+    padding: 1%;
+    /* border: 2px solid rgb(41, 2, 9); */
+    border-left: 1px solid rgb(95, 91, 91);
+    width: 25%;
+  }
+
+  .footer-Sing_up{
+    font-size: 1rem;
+  }
+
+  .footer-Sing_up2{
+    font-size: .6rem;
+  }
+
 
 
 
