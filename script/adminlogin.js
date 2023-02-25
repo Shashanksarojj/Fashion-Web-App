@@ -1,4 +1,4 @@
-let form=document.querySelector("form");
+let form=document.querySelector("#admin-form");
     form.addEventListener("submit",function(e){
         e.preventDefault();
         let email=document.querySelector("#email").value;

@@ -248,6 +248,7 @@ form {
     background-color: #000000;
     color: white;
     font-size: 18px;
+    cursor: pointer;
   }
   #Register-form{
     height: 430px;
