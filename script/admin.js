@@ -4,7 +4,10 @@
 let global = []
 
 let tbodyel = document.querySelector("tbody")
-let countEl = document.getElementById("count")
+let countEl = document.querySelector(".counter")
+let c = 0
+let torders = document.querySelector("#total-orders")
+let formel = document.querySelector("form")
 
 let categoryEl = document.getElementById("category")
 let genderEl = document.getElementById("gender")
@@ -13,7 +16,9 @@ let nameEl = document.getElementById("name")
 let priceEl = document.getElementById("price")
 let ratingEl = document.getElementById("rating")
 let tagEl = document.getElementById("tag")
-let updatebtn = document.querySelector(".update-btns") 
+let updatebtn = document.querySelector(".update-btns")
+let stCount = document.getElementById("s-count")
+let sCount = document.getElementById("o-stock")
 
 
 let buttonEl = document.querySelector(".btns")
@@ -37,8 +42,7 @@ AddPro.addEventListener("click", (e) => {
   }
   buttonEl.addEventListener("click", (e) => {
     e.preventDefault();
-    // global.forEach((ele, ind) => {
-    //if (ind == i) {
+
     console.log("hi")
     fetch(`https://jsonplaceholder.typicode.com/posts`, {
       method: "POST",
@@ -49,22 +53,20 @@ AddPro.addEventListener("click", (e) => {
 
 
     }).then(Response => console.log(Response.status))
-    // }
-
-    // })
 
 
   })
-
 
 })
 
 let togglebtn = document.querySelectorAll(".checkbox")[0];
 let search = document.querySelectorAll(".fa-solid fa-magnifying-glass")[0]
 let body = document.querySelectorAll("#interface")[0];
+let dash = document.querySelectorAll(".i-name")[0]
 togglebtn.addEventListener("click", () => {
   console.log("toggle")
   body.classList.toggle("dark")
+  dash.classList.toggle("dark")
 })
 
 let tproducts = document.getElementById("total-products")
@@ -82,6 +84,7 @@ async function getdata() {
 }
 
 function display(data) {
+  tbodyel.innerHTML = ""
   data.forEach((element, i) => {
 
     let card = document.createElement("tr")
@@ -179,3 +182,34 @@ function display(data) {
 
   });
 }
+
+countEl.addEventListener("click", ()=>{
+  c++
+  torders.textContent = c
+  // stCount.textContent --
+  if(stCount.textContent>=0){
+    stCount.textContent--
+    if(stCount.textContent==-1){
+      stCount.textContent=5
+      
+        sCount.textContent++
+      
+    }
+
+  }
+})
+
+formel.addEventListener("submit", (e) => {
+  e.preventDefault()
+  let textel = searchinp.value
+ 
+  let filtered = global.filter((element) => {
+    if (element.name.toUpperCase().includes(textel.toUpperCase()) == true) {
+      return true
+    } else {
+      return false
+    }
+  })
+  display(filtered)
+  
+})

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analytics</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="admin.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'poppins', sans-serif;
+        }
+
+        .graphbox {
+            position: relative;
+            width: 100%;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 30px;
+            min-height: 200px;
+
+        }
+
+        .graphbox .box {
+            position: relative;
+            background: #fff;
+            padding: 20px;
+            width: 100%;
+            box-shadow: 0.7px 25px rgba(0, 0, 0, 0.08);
+            border-radius: 20px;
+        }
+       h2{
+        position: relative;
+        font-size: 6vw;
+        text-align: center;
+        color: #d5d6db;
+        -webkit-text-stroke: 0.3vw #383d52;
+        text-transform: uppercase;
+       }
+       h2::before{
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 100%;
+        color: darkblue;
+        -webkit-text-stroke: 0vw #383d52;
+        border-right: 2px solid #01fe87;
+        overflow: hidden;
+        animation: animate 6s linear infinite;
+       }
+       @keyframes animate {
+        0%, 10%, 100%{
+            width: 0;
+        }
+         70%, 90%{
+            width: 100%;
+        }
+       }
+    </style>
+</head>
+
+<body>
+    <div class="headd">
+        <h2 data-text="Analytics">Analytics</h2>
+    </div>
+    <div class="graphbox">
+
+        <div class="box">
+            <canvas id="myChart"></canvas>
+        </div>
+        <div class="box">
+
+            <canvas id="earning"></canvas>
+        </div>
+
+    </div>
+</body>
+
+</html>
+<script src="./chart.js"></script>

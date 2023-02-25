@@ -4,13 +4,15 @@
     box-sizing: border-box;
     font-family: 'poppins', sans-serif;
 }
-body{
+
+body {
     width: 100%;
     background: #e5e7eb;
     position: relative;
     display: flex;
 }
-#menu{
+
+#menu {
     background: #111827;
     width: 300px;
     height: 100%;
@@ -18,30 +20,34 @@ body{
     top: 0;
     left: 0;
 }
-.logo{
+
+.logo {
     color: #fff;
-   margin-left: 30px;
-margin-bottom: -20px;
-padding-top: 20px;
+    margin-left: 30px;
+    margin-bottom: -20px;
+    padding-top: 20px;
 }
 
-#menu .items{
+#menu .items {
     margin-top: 40px;
 }
-#menu .items li{
+
+#menu .items li {
     list-style: none;
     padding: 15px 0;
     transition: 0.3s ease;
 }
-#menu .items li:hover{
-   background: #253047;
-   cursor: pointer;
+
+#menu .items li:hover {
+    background: #253047;
+    cursor: pointer;
 }
-#menu .items li:nth-child(1){
+
+#menu .items li:nth-child(1) {
     border-left: 4px solid #fff;
 }
 
-#menu .items li i{
+#menu .items li i {
     color: rgb(134, 141, 151);
     width: 30px;
     height: 30px;
@@ -50,25 +56,29 @@ padding-top: 20px;
     font-size: 14px;
     margin: 0 10px 0 25px;
 }
-.text{
+
+.text {
     color: rgb(134, 141, 151);
 }
 
-#menu .items li:hover i,#menu .items li:hover a{
+#menu .items li:hover i,
+#menu .items li:hover a {
     color: #f3f4f6;
 }
 
-#menu .items li a{
+#menu .items li a {
     text-decoration: none;
     color: rgb(134, 141, 151);
     font-weight: 300px;
     transition: 0.3s ease;
 }
-hr{
+
+hr {
     border: 0.5px solid rgb(115, 115, 115);
     background-color: rgb(105, 105, 105);
 }
-.checkbox{
+
+.checkbox {
     appearance: none;
     position: relative;
     background-color: rgb(216, 216, 216);
@@ -78,20 +88,24 @@ hr{
     cursor: pointer;
     transition: 0.3s ease;
 }
-#dark-toggle{
+
+#dark-toggle {
     margin-left: 0.5rem;
     width: 17rem;
-   
+
 }
-#dark-toggle:hover{
+
+#dark-toggle:hover {
     background-color: rgb(255, 255, 255);
     color: black;
 }
-#toggletext{
+
+#toggletext {
     margin-left: 0.8rem;
     margin-right: 5.7rem;
 }
-.checkbox::before{
+
+.checkbox::before {
     content: "";
     height: 1.2rem;
     width: 1.4rem;
@@ -102,46 +116,53 @@ hr{
     top: 2px;
     left: 3px;
 }
-.checkbox:checked{
+
+.checkbox:checked {
     background-color: rgb(105, 105, 105);
 }
-.checkbox:checked::before{
-    left:calc(3rem - 1.4rem)
+
+.checkbox:checked::before {
+    left: calc(3rem - 1.4rem)
 }
-.dark{
+
+.dark {
     background-color: rgb(17, 17, 17);
 }
-.middark{
+
+.middark {
     background-color: rgb(45, 45, 45);
 }
-.color{
+
+.color {
     color: white;
 }
-.searchcolor{
+
+.searchcolor {
     color: rgb(38, 38, 38);
 }
 
-#interface{
+#interface {
     width: calc(100% - 300px);
     margin-left: 300px;
     position: relative;
 }
-.profile{
+
+.profile {
     display: flex;
 
 }
 
-.profile >div:nth-child(1){
-   
-   /* border: 1px solid red; */
-   /* margin-right: 110px; */
-      padding-top: 20px;
-      margin-right: -20px;
-   
+.profile>div:nth-child(1) {
+
+    /* border: 1px solid red; */
+    /* margin-right: 110px; */
+    padding-top: 20px;
+    margin-right: -20px;
+
 
 }
 
-.dark-toggle{
+.dark-toggle {
     height: 3.5rem;
     display: flex;
     justify-content: center;
@@ -153,7 +174,11 @@ hr{
     font-size: 1.1rem;
 }
 
-#interface .navigation{
+.dashc {
+    background-color: rgb(242, 242, 242);
+}
+
+#interface .navigation {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -164,54 +189,64 @@ hr{
     width: calc(100% - 300px);
     height: 130px;
 }
-#interface .navigation img{
+
+#interface .navigation img {
     height: 100px;
     /* border: 1px solid red; */
     margin-left: 40px;
-   
-    
-    
+
+
+
 }
+
 #interface .navigation .search input {
     border: none;
     outline: none;
-    font-size: 14px;
+    font-size: 17px;
 }
-.ni{
-    
+
+.ni {
+
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
-#menu-btn{
+
+#menu-btn {
     display: none;
     color: #2b2b2b;
     font-size: 30px;
     cursor: pointer;
     margin-right: 20px;
 }
-#btn{
+
+#btn {
     display: block;
     margin: auto;
     margin-left: 900px;
     padding: 5px 10px;
-   color: #111827;
-   font-weight: 600;
-   background-color: chartreuse;
-   border: none;
-   border-radius: 4px;
-   position: relative;
-   /* z-index: 5px; */
-    
+    color: #111827;
+    font-weight: 600;
+    background-color: chartreuse;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    /* position: relative; */
+    /* z-index: 5px; */
+    /* position: absolute; */
+    /* width: calc(100% - 300px); */
+
 }
 
-.i-name{
+.i-name {
     color: #444a53;
+    /* background: #fff; */
     padding: 30px 30px 0 30px;
     font-size: 24px;
     font-weight: 700;
     margin-top: 120px;
 }
+
 .values {
     padding: 30px 30px 0 30px;
     display: flex;
@@ -219,7 +254,8 @@ hr{
     align-items: center;
     flex-wrap: wrap;
 }
-.values .val-box{
+
+.values .val-box {
     background: #fff;
     width: 235px;
     padding: 16px 20px;
@@ -228,7 +264,8 @@ hr{
     justify-content: flex-start;
     align-items: center;
 }
-.values .val-box i{
+
+.values .val-box i {
     font-size: 25px;
     width: 60px;
     height: 60px;
@@ -236,29 +273,36 @@ hr{
     border-radius: 50%;
     text-align: center;
     color: #fff;
-   
+
     margin-right: 15px;
 }
-.values .val-box h3{
+
+.values .val-box h3 {
     font-size: 18px;
     font-weight: 600;
 }
-.values .val-box span{
+
+.values .val-box span {
     font-size: 15px;
     color: #828997;
 }
-.values .val-box:nth-child(1) i{
+
+.values .val-box:nth-child(1) i {
     background-color: #7b74ec;
 }
-.values .val-box:nth-child(2) i{
+
+.values .val-box:nth-child(2) i {
     background-color: #5c8af0;
 }
-.values .val-box:nth-child(3) i{
+
+.values .val-box:nth-child(3) i {
     background-color: #e45d99;
 }
-.values .val-box:nth-child(4) i{
+
+.values .val-box:nth-child(4) i {
     background-color: #74daec;
 }
+
 .board {
     width: 94%;
     margin: 30px 0 30px 30px;
@@ -266,6 +310,7 @@ hr{
     background: #fff;
     border-radius: 8px;
 }
+
 .board img {
     width: 45px;
     height: 45px;
@@ -273,27 +318,33 @@ hr{
     border-radius: 50%;
     margin-right: 15px;
 }
+
 .board h5 {
     font-weight: 600;
     font-size: 14px;
 }
+
 .board p {
     font-weight: 400;
     font-size: 13px;
     color: #787d8d;
 }
+
 .board .people {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     text-align: start;
 }
+
 table {
     border-collapse: collapse;
 }
+
 tr {
     border-bottom: 1px solid #eef0f3;
 }
+
 thead th {
     font-size: 14px;
     text-transform: uppercase;
@@ -304,10 +355,12 @@ thead th {
     color: black;
 
 }
-#td4{
+
+#td4 {
     color: green;
-    
+
 }
+
 tbody tr td {
     padding: 10px 15px;
 }
@@ -315,89 +368,106 @@ tbody tr td {
 
 
 @media (max-width: 769px) {
-    #menu{
+    #menu {
         width: 270px;
         position: fixed;
         left: -270px;
         transition: 0.3s ease;
     }
-    #menu.active{
+
+    #menu.active {
         left: -0px;
     }
-    #menu-btn{
+
+    #menu-btn {
         display: initial;
     }
-    #interface{
+
+    #interface {
         width: 100%;
         margin-left: 0px;
         display: inline-block;
         transition: 0.3s ease;
     }
-    #menu.active~#interface{
+
+    #menu.active~#interface {
         width: calc(100% - 270px);
         margin-left: 270px;
         transition: 0.3s ease;
     }
-    #interface .navigation{
+
+    #interface .navigation {
         width: 100%;
     }
+
     .values {
         padding: 30px 30px 0 30px;
         margin: auto;
         display: flex;
-        
+
         justify-content: flex-start;
     }
-    .values .val-box{
+
+    .values .val-box {
         padding: 16px 20px;
         margin: 10px 20px 10px 0;
-        
+
     }
-    .board{
+
+    .board {
         width: 92%;
         padding: 0;
         overflow-x: auto;
     }
-    table{
+
+    table {
         width: 100%;
         border-collapse: collapse;
     }
-    #btn{
+
+    #btn {
         display: block;
         margin: auto;
         /* margin-left: 970px; */
         padding: 5px 10px;
-       color: #111827;
-       font-weight: 600;
-       background-color: chartreuse;
-       border: none;
-       border-radius: 4px;
-       position: relative;
-        
+        color: #111827;
+        font-weight: 600;
+        background-color: chartreuse;
+        border: none;
+        border-radius: 4px;
+        position: relative;
+
     }
 }
+
 @media (max-width: 477px) {
-    #interface .navigation{
+    #interface .navigation {
         padding: 15px;
     }
+
     #interface .navigation .search input {
-       width: 150px;
+        width: 150px;
     }
-    .i-name{
+
+    .i-name {
         padding: 30px 15px 0 15px;
     }
-    .values{
+
+    .values {
         padding: 15px 15px 0 15px;
     }
-    .values .val-box{
+
+    .values .val-box {
         width: 100%;
-        margin: 8px 0px ;
+        margin: 8px 0px;
     }
-    .board{
+
+    .board {
         margin: 30px 15px 30px 15px;
     }
 }
-.formpop{
+
+.formpop {
     display: none;
     position: fixed;
     bottom: 0px;
@@ -406,46 +476,56 @@ tbody tr td {
     border: 3px solid #f1f1f1;
     z-index: 9;
 }
-.formcontent{
+
+.formcontent {
     max-width: 300px;
     padding: 10px;
+    height: 100%;
     background-color: white;
+  
 
 }
-.formcontent input[type=text]:focus{
-background-color: #ddd;
-outline: none;
+
+.formcontent input[type=text]:focus {
+    background-color: #ddd;
+    outline: none;
 }
-.formcontent input[type=text]{
-    width:100%;
-    padding:15px;
+
+.formcontent input[type=text] {
+    width: 100%;
+    padding: 15px;
     margin: 5px 0px 22px 0px;
     border: none;
     background: #f1f1f1;
 }
-.formcontent .btns{
-background-color: #04aa6d;
-color: white;
-padding: 16px 20px;
-border:none;
-cursor: pointer;
-width: 100%;
-margin-bottom: 10px;
-opacity: 0.8;
-}
-.formcontent .btns:hover{
-opacity: 1;
-}
-.formcontent .update-btns{
+
+.formcontent .btns {
     background-color: #04aa6d;
     color: white;
     padding: 16px 20px;
-    border:none;
+    border: none;
     cursor: pointer;
     width: 100%;
     margin-bottom: 10px;
     opacity: 0.8;
-    }
-    .formcontent .update-btns:hover{
+}
+
+.formcontent .btns:hover {
     opacity: 1;
-    }
+}
+
+.formcontent .update-btns {
+    background-color: #04aa6d;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.formcontent .update-btns:hover {
+    opacity: 1;
+}
+/* Analytics */
