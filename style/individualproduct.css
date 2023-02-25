@@ -188,9 +188,9 @@
 #size p:nth-child(2){
 margin-left: 20px;
 }
-#sizebutton{
-    /* border: 1px solid; */
-}
+/* #sizebutton{
+    border: 1px solid;
+} */
 .size{
     width: 60px;
     height: 38px;
