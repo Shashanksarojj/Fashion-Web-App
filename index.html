@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Burrbery</title>
+    <title>BURBERRY</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
@@ -18,28 +18,38 @@
     <div id="container_nav" class="flexed">
         <div class="logo_div">
             <button id="LOGO">
-                <a href="index.html" class="Logo_a" title="Burberry"
-                    aria-label="Click to return to the Burberry homepage" data-test="burberry-logo" class="anc"
+                <a href="index.html" class="Logo_a"  
                     style="opacity:1;transform:none">
                     <h1 id="H1font">BURBERRY</h1>
                 </a>
             </button>
         </div>
-        <nav id="nav" class="flexed">
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span>/</span>
+                <span>/</span>
+                <span>/</span>
+            </label>
+        </div>
+        <nav id="navigation">
             <div>
                 <a class="Atitle" href="./women.html">Womens</a>
             </div>
+
             <div>
                 <a class="Atitle" href="./children.html">Children's</a>
             </div>
             <div>
                 <a class="Atitle" href="./men.html">Men's</a>
             </div>
-           
+
             <div>
                 <a class="Atitle" href="./login.html">Login</a>
             </div>
+            
+            
         </nav>
+       
     </div>
 
 
@@ -48,7 +58,7 @@
         Your browser does not support HTML5 video.
     </video>
 
-    <div class="vid_con">  
+    <div class="vid_con">
         <p>Autum Winter 2023 Show</p>
         <button id="myBtn" onclick="myFunction()">View</button>
     </div>
@@ -56,22 +66,61 @@
 
 
     <div class="flexed">
-         <div>
-            <img src="./images/img01.webp" alt=""></div> 
-        <div><img src="./images/img02.webp" alt=""></div>
+        <div>
+            <img src="./images/img05.webp" alt="">
+            <p class="vid_con2">Autum Winter 2023 Collection</p>
+        </div>
+        <div>
+            <img src="./images/img06.webp" alt="">
+            <p class="vid_con2">Autum Winter 2023 Collection</p>
+        </div>
     </div>
+
+
     <div>
         <img src="images/img03.webp" alt="">
+        <p class="vid_con3">The Heritage Collection</p>
     </div>
 
-   <div>
-    <img src="./images/img04.avif" alt="">
-   </div>
+    <div>
+        <img src="./images/img04.avif" alt="">
+        <p class="vid_con3">Bags</p>
+    </div>
+
+    <div class="fa_1">
+        <h1>Children</h1>
+        <h1>The Trench Coat</h1>
+        <h1>Scarves</h1>
+    </div>
 
 
 
 
+    <footer class="footer-section">
+        <div id="footer-div1">
+            <p class="footer-Sing_up">SIGN UP</p>
+            <p class="footer-Sign_up2">Sign up below for updates about the world of Burberry, including
+                collection launches and early access to limited-edition products and collaborations.</p>
+            <form class="footer_form">
+                <input type="email" name="signup-email" value="" aria-label="Email" aria-invalid="false"
+                    class="footer_input">
+                <span class="">Email</span>
+            </form>
+        </div>
+        <div id="footer-div2">
+            <p class="footer-Sing_up">STORE LOCATOR</p>
+        </div>
+        <div id="footer-div3">
+            <p class="footer-Sing_up">CUSTOMER SERVICE</p>
+            <p class="footer-Sing_up">LEGAL AND COOKIE</p>
+            <p class="footer-Sing_up">OUR COMPANY</p>
+        </div>
+        <div id="footer-div4">
+            <p class="footer-Sing_up">LANGUAGE <br> English</p>
+            <p class="footer-ing_up">SHIPPING TO</p>
+        </div>
 
+    </footer>
 
 
 
@@ -83,20 +132,7 @@
 
 </body>
 
-<script>
-    var video = document.getElementById("myVideo");
-    var btn = document.getElementById("myBtn");
 
-    // function myFunction() {
-    //     if (video.paused) {
-    //         video.play();
-    //         btn.innerHTML = "Pause";
-    //     } else {
-    //         video.pause();
-    //         btn.innerHTML = "Play";
-    //     }
-    // }
-</script>
 
 
 </html>

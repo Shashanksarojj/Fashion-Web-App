@@ -11,8 +11,7 @@ body {
     position: relative;
     display: flex;
 }
-
-#menu {
+#menu{
     background: #111827;
     width: 300px;
     height: 100%;
