@@ -1,5 +1,5 @@
 *{
-    font-family: "Times New Roman", Times, serif;
+    font-family: 'Courier New', Courier, monospace;
     margin: 0px;
 }
 
@@ -110,6 +110,8 @@
   }
 
 
+
+  
 #title{
     /* border: 1px solid; */
     width: 100%;
