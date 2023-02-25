@@ -54,6 +54,7 @@ let pricediv=document.getElementById("price")
 
 let y=null
 let elementdata=[]
+
 async function product(){
    try{
     let res=await fetch(`${url}/${item}`)

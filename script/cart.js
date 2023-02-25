@@ -1,13 +1,3 @@
-let td1= document.querySelector(".td1")
- let td2= document.querySelector(".td2")
- let td3= document.querySelector(".td3")
- let td4= document.querySelector(".td4")
- //let A=JSON.parse(localStorage.getItem("element"))||[]
-// jacket()
-let main1=document.getElementById("main1")
- let url="https://63f4671c3f99f5855daeb266.mockapi.io/products"
- let item=JSON.parse(localStorage.getItem("cart"))||null
-for(let i=0;i<item.length;i++){
 
 itemData=[]
 async function jacket(){
