@@ -1,6 +1,6 @@
 let memberData=JSON.parse(localStorage.getItem("account-data"))||[];
 
-let form=document.querySelector("form");
+let form=document.querySelector("#login-form");
 
 memberData.forEach(function(el,i){
     form.addEventListener("submit",function(e){
