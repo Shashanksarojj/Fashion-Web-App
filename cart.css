@@ -26,3 +26,8 @@ table {
     padding: 16px 32px;
   
   }
+  /* #main1{
+    grid-template-columns: repeat(3,1fr);
+    gap: 10px;
+   
+  } */

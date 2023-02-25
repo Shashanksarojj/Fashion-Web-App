@@ -1,52 +1,55 @@
 body{
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 /* ------------Nav start--------------------------- */
 #container_nav{
-    display: flex;
-    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+  display: flex;
+  box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 .logo_div{
-    width: 30%;
-    margin-left: 2%;
-    /* border: 2px solid rgb(242, 9, 9); */
+  width: 30%;
+  margin-left: 2%;
+  /* border: 2px solid rgb(242, 9, 9); */
 }
 #nav{
-    display: flex;
-    justify-content: space-around;
-    width: 70%;
-    align-items: center;
+  display: flex;
+  justify-content: space-around;
+  width: 70%;
+  align-items: center;
 }
 .flexed{
-    display: flex;
-    /* justify-content: center; */
+  display: flex;
+  /* justify-content: center; */
 }
 
 .Atitle{
-    text-decoration: none;
+  text-decoration: none;
 }
 
 #LOGO{
-    border: none;
-    /* backface-visibility: visible; */
-    background-color: transparent;
-    font-family: 'Styrene',Helvetica,Arial,sans-serif;
-    width: 70%;
+  border: none;
+  /* backface-visibility: visible; */
+  background-color: transparent;
+  font-family: 'Styrene',Helvetica,Arial,sans-serif;
+  width: 70%;
 }
 
 .Logo_a{
-    text-decoration: none;
-    font-family: 'Times New Roman', Times, serif;
-   
+  text-decoration: none;
+  font-family: 'Times New Roman', Times, serif;
+ 
 }
 
 .fa-solid{
-  position: relative;
-  right: 55px;
+position: relative;
+right: 70px;
+top: 7px;
 }
 
 /* ------------Nav End--------------------------- */
+
+
 
 #Login_image{
     width: 100%;
@@ -69,7 +72,7 @@ body{
     font-weight: 540;
 }
 #Register{
-    width: 70%;
+    width: 50%;
     margin: auto;
     background-color: #f7f7f7;
     position: relative;
@@ -77,40 +80,38 @@ body{
     bottom: 30px;
     margin-bottom: 30px;
     padding-right: 30px;
+    padding-left: 30px;
 }
 #Register-container{
     margin: 15px;   
 }
 #Register-container>div{
-    display: flex;
     padding: 8px;
-    justify-content: space-between;
+    width: 96%;
 }
 #textreg{
-    padding: 20px;
-    
+    padding: 10px;
+    font-size: 18px;
+    margin-left: 2px;
 }
-#req{
-    margin-right: 12px;
-    height: 70px;
-    margin-top: 19px;
-    font-size: small;
-}
+
 #plz{
-    width: 96%;
-    padding: 0;
-   
+    width: 100%;
     margin: auto;
 }
 #plz p{
-    width: 100%;
-    margin-right:20px ;
+    width: 98%;
     font-size: 12px;
+    margin: auto;
 }
 form {
     width: 100%;
     margin-left: 20px;
     padding-right: 25px;
+  }
+  form p{
+    font-size: 9px;
+    margin-top: 12px;
   }
   
   form label {
@@ -118,53 +119,39 @@ form {
     margin-top: 20px;
     font-size: 18px;
   }
-form input {
-    width: 98.5%; 
+  form input {
+    width: 91%; 
     padding: 7px;
     height: 22px;
+    margin-top: 15px;
     border: none;
-    border: 1px solid gray;
-    outline: none;
-  }
-  form select{
-    width: 100%;
-    padding: 7px;
-    border: none;
-    height: 42px;
     border: 1px solid gray;
     outline: none;
   }
   input[type="submit"] {
-    width: 100%;
+    width: 93%;
     height: 35px;
-    margin-top: 20px;
+    margin-top: 13px;
     border: none;
     background-color: #000000;
     color: white;
     font-size: 18px;
   }
-  #term{
-    display: flex;
-    margin-top: 30px;
-    justify-content: space-between;
-  }
-  #term>div:nth-child(1)>p{
-    margin-right: 10px;
-  }
-  #desc_signup{
-    padding: 12px;
-    margin-top: 24px;
-    margin-bottom: 15px;
-    background-color: #dddddd;
-  }
   #Register-form{
-    height: 1120px;
+    height: 430px;
     margin: 15px;
   }
   #ald{
     color: black;
-    font-size:16px;
+    font-size:13px;
   }
+  #forgot{
+    display: flex;
+    width: 92%;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+
 
   /* -----------------------Footer start--------------------- */
 

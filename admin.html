@@ -9,12 +9,13 @@
     integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>Admin Page</title>
-  <link rel="stylesheet" href="./style/admin.css">       
+  <link rel="stylesheet" href="./style/admin.css">
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 
 </head>
 
 <body>
+
 
   <section id="menu">
     <div class="logo">
@@ -28,7 +29,15 @@
       <li><i class="fa-solid fa-table"></i><a href="#">Table</a></li>
       <li><i class="fa-brands fa-wpforms"></i><a href="#">Forms</a></li>
       <li><i class="fa-regular fa-credit-card"></i><a href="#">Card</a></li>
+      <hr>
+      <li> <i class="fa-solid fa-right-from-bracket"></i><a href="#">Logout</a></li>
 
+    </div>
+
+
+    <div class="dark-toggle">
+      <input type="checkbox" class="checkbox">
+      <p class="text" id="toggletext">Dark mode</p>
     </div>
 
   </section>
@@ -63,6 +72,8 @@
       Dashboard
     </h3>
 
+    <button id="btn">+ Add Product</button>
+
     <div class="values">
       <div class="val-box">
         <i class="fa-solid fa-users"></i>
@@ -83,7 +94,7 @@
       <div class="val-box">
         <i class="fa-solid fa-shop"></i>
         <div>
-          <h3>8,267</h3>
+          <h3 id="total-products"></h3>
           <span>Total Products</span>
         </div>
 
@@ -106,39 +117,53 @@
             <th>price</th>
             <th>Status</th>
             <th>Delete</th>
+            <th>Edit</th>
           </tr>
 
         </thead>
         <tbody>
-          <!-- <tr>
-            <td class="people">
-              <img src="https://c1.staticflickr.com/7/6178/6140989632_1c8066563d_b.jpg" alt="">
-              <div class="people-de">
-                <h5>John Doe</h5>
-                <p>John@example.com</p>
-              </div>
-            </td>
-            <td class="people-des">
-              <h5>Software Engineer</h5>
-              <p>Web dev</p>
-            </td> -->
 
-<!-- 
-            <td class="active">
-              <p>Active</p>
-            </td>
-
-            <td class="role">
-              <p>Owner</p>
-            </td>
-
-            <td class="edit"><a href="#">Edit</a></td>
-          </tr> -->
         </tbody>
       </table>
     </div>
 
+    <div id="vac" class="formpop">
+      <div class="formcontent">
+        <!-- <form > -->
+        <!-- <label for="otp">Enter ID</label> -->
+
+        <input type="text" placeholder="Enter ID" id="id" required >
+        <label for="otp">Enter Category</label>
+
+        <input type="text" placeholder="Enter Category" id="category" required>
+
+        <!-- <label for="otp">Enter Gender</label> -->
+
+        <input type="text" placeholder="Enter Gender" id="gender" required>
+        <!-- <label for="otp">Enter Image</label> -->
+
+        <input type="text" placeholder="Enter Image Url" id="image" required>
+        <!-- <label for="otp">Enter Name</label> -->
+
+        <input type="text" placeholder="Enter Name" id="name" required>
+        <!-- <label for="otp">Enter Price</label> -->
+
+        <input type="text" placeholder="Enter Price" id="price" required>
+        <!-- <label for="otp">Enter Rating</label> -->
+
+        <input type="text" placeholder="Enter rating" id="rating" required>
+        <!-- <label for="otp">Enter Tag</label> -->
+
+        <input type="text" placeholder="Enter Tag" id="tag" required>
+        <button type="submit" class="update-btns">update</button>
+        <button type="submit" class="btns">Add</button>
+
+        <!-- </form> -->
+      </div>
+    </div>
+
   </section>
+
 
   <script>
     $('#menu-btn').click(function () {
