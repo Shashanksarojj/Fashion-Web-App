@@ -206,11 +206,14 @@ table {
     padding-top: 0.2rem;
     margin-left: 0%;
     vertical-align: baseline;
+
+   
   }
 
   #footer-div1{
     padding: 1%;
     /* border: 2px solid red; */
+   
     width: 25%;
   }
 

@@ -178,6 +178,9 @@
 }
 
 
+
+
+
 .footer-section {
   display: flex;
   justify-content: left;
@@ -189,6 +192,8 @@
   padding-top: 0.2rem;
   margin-left: 0%;
   vertical-align: baseline;
+  /* background-color: #e5e0e0; */
+  background-color: #e5e0e0;
 }
 
 #footer-div1{

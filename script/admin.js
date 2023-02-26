@@ -30,26 +30,37 @@ AddPro.addEventListener("click", (e) => {
   updatebtn.style.display = "none"
   e.preventDefault();
   document.getElementById("vac").style.display = "block"
-  let obj = {
 
-    category: categoryEl.value,
-    image: imageEl.value,
-    gender: genderEl.value,
-    name: nameEl.value,
-    rating: ratingEl.value,
-    price: priceEl.value,
-
-  }
   buttonEl.addEventListener("click", (e) => {
     e.preventDefault();
+    let obj = {
+
+      // category: categoryEl.value,
+      // image: imageEl.value,
+      // gender: genderEl.value,
+      // name: nameEl.value,
+      // rating: ratingEl.value,
+      // price: priceEl.value,
+
+    }
 
     console.log("hi")
-    fetch(`https://jsonplaceholder.typicode.com/posts`, {
+    let arr = []
+    arr.push(imageEl.value)
+    fetch(`https://63f4671c3f99f5855daeb266.mockapi.io/products`, {
+
       method: "POST",
       headers: {
         'Content-type': 'application/json'
       },
-      body: JSON.stringify(obj)
+      body: JSON.stringify({
+        category: categoryEl.value,
+        image: arr,
+        gender: genderEl.value,
+        name: nameEl.value,
+        rating: ratingEl.value,
+        price: priceEl.value,
+      })
 
 
     }).then(Response => console.log(Response.status))
@@ -87,6 +98,7 @@ function display(data) {
   tbodyel.innerHTML = ""
   data.forEach((element, i) => {
 
+
     let card = document.createElement("tr")
     tbodyel.append(card)
 
@@ -109,17 +121,25 @@ function display(data) {
     td5.style.cursor = "pointer"
 
     td5.addEventListener("click", () => {
+
       global.forEach((ele, ind) => {
+
         if (ind == i) {
-          fetch(`https://jsonplaceholder.typicode.com/posts/${ind + 1}`, {
+          // let requiredd = e.target.element.id
+          fetch(`https://63f4671c3f99f5855daeb266.mockapi.io/products/${ele.id}`, {
             method: "DELETE",
             headers: {
               'Content-type': 'application/json'
             },
           })
-            .then(response => console.log(response.status))
+            .then(response => response.json())
+            .then(data => console.log(data))
+          // console.log(ele.id)
         }
+
+
       })
+      display(global)
     })
 
     let td6 = document.createElement("td")
@@ -130,36 +150,46 @@ function display(data) {
 
     td6.addEventListener("click", (e) => {
       e.preventDefault();
-
+      // idEl.style.display = "none"
       document.getElementById("vac").style.display = "block"
+
       console.log("hello")
     })
     updatebtn.addEventListener("click", (e) => {
       e.preventDefault();
+      let arr = []
+      arr.push(imageEl.value)
 
       let obj = {
 
         category: categoryEl.value,
-        image: imageEl.value,
+        image: arr,
         gender: genderEl.value,
         name: nameEl.value,
         rating: ratingEl.value,
         price: priceEl.value,
 
       }
+      global.forEach((elem, ind) => {
+        
+        if (elem.id == idEl.value) {
+          console.log('edit')
 
-      if (i == idEl.value) {
-        console.log("done")
-        fetch(`https://jsonplaceholder.typicode.com/posts/${idEl.value}`, {
-          method: "PUT",
-          headers: {
-            'Content-type': 'application/json'
-          },
-          body: JSON.stringify(obj)
+          fetch(`https://63f4671c3f99f5855daeb266.mockapi.io/products/${elem.id}`, {
+            method: "PUT",
+            headers: {
+              'Content-type': 'application/json'
+            },
+            body: JSON.stringify(obj)
 
+          }).then(Response => console.log(Response.status))
+        }
+      })
+      display(global)
 
-        }).then(Response => console.log(Response.status))
-      }
+      // if (i == idEl.value) {
+
+      //}
 
     })
 
@@ -177,23 +207,28 @@ function display(data) {
 
       })
     })
+    let td7 = document.createElement("td")
+    let image = document.createElement("img")
+    image.setAttribute("src", element.image[0])
 
-    card.append(td2, td3, td1, td4, td5, td6)
+    td7.append(image)
+
+    card.append(td7, td2, td3, td1, td4, td5, td6)
 
   });
 }
 
-countEl.addEventListener("click", ()=>{
+countEl.addEventListener("click", () => {
   c++
   torders.textContent = c
   // stCount.textContent --
-  if(stCount.textContent>=0){
+  if (stCount.textContent >= 0) {
     stCount.textContent--
-    if(stCount.textContent==-1){
-      stCount.textContent=5
-      
-        sCount.textContent++
-      
+    if (stCount.textContent == -1) {
+      stCount.textContent = 5
+
+      sCount.textContent++
+
     }
 
   }
@@ -202,7 +237,7 @@ countEl.addEventListener("click", ()=>{
 formel.addEventListener("submit", (e) => {
   e.preventDefault()
   let textel = searchinp.value
- 
+
   let filtered = global.filter((element) => {
     if (element.name.toUpperCase().includes(textel.toUpperCase()) == true) {
       return true
@@ -211,5 +246,5 @@ formel.addEventListener("submit", (e) => {
     }
   })
   display(filtered)
-  
+
 })

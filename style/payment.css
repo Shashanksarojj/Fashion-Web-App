@@ -149,31 +149,32 @@ body{
 /* -----------------------Footer start--------------------- */
 
 .footer-section {
-    display: flex;
-    justify-content: left;
-    border-top: 1px solid rgb(175, 174, 174);
-    /* background-color: rgb(180, 180, 178); */
-    margin-bottom: 30px;
-    margin-top: 11%;
-    padding-top: 0.2rem;
-    font-size: 18px;
-    margin-left: 0%;
-    height: 260px;
-    vertical-align: baseline;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    /* border: 2px solid red; */
-    background-color: #e5e0e0;
-  }
-  .footer-section p{
-    font-size: 17px;
-  }
-  #div1{
-    padding: 1%;
-    /* border: 2px solid red; */
-    width: 25%;
-    font-size: 20px;
-    /* border: 2px solid red; */
-  }
+  display: flex;
+  justify-content: left;
+  border-top: 1px solid rgb(95, 91, 91);
+  /* background-color: rgb(180, 180, 178); */
+  margin-bottom: 30px;
+  margin-top: 11%;
+  padding-top: 0.2rem;
+  font-size: 18px;
+  margin-left: 0%;
+  height: 260px;
+  vertical-align: baseline;
+  font-family: "Courier New", Courier, monospace;
+  /* border: 2px solid red; */
+  /* background-color: #f7f7f7; */
+  background-color: #e5e0e0;
+}
+.footer-section p {
+  font-size: 17px;
+}
+#div1 {
+  padding: 1%;
+  /* border: 2px solid red; */
+  width: 25%;
+  font-size: 20px;
+  /* border: 2px solid red; */
+}
 
 
   #div2{

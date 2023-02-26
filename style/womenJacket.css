@@ -132,6 +132,7 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 2px;
+    min-height: 500px;
     margin-top: 5px;
     max-height: 200vh;
     overflow-y: scroll;
@@ -445,6 +446,7 @@
     padding-top: 0.2rem;
     margin-left: 0%;
     vertical-align: baseline;
+    background-color: #e5e0e0;
   }
 
   #footer-div1{
