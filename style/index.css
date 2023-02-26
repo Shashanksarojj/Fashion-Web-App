@@ -164,12 +164,14 @@ color: #bcb8b8;
   border-top: 1px solid rgb(95, 91, 91);
   text-align: left;
   /* background-color: rgb(180, 180, 178); */
-  margin-bottom: 2%;
+  /* margin-bottom: 2%; */
   margin-top: 1%;
   padding-top: 0.2rem;
   margin-left: 0%;
 
   vertical-align: baseline;
+
+  background-color: #e5e0e0;
 }
 
 #footer-div1 {
