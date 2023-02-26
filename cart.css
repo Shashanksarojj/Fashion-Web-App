@@ -64,6 +64,38 @@
 .nav > #nav-check {
   display: none;
 }
+#main{
+  background-color:rgba(231, 223, 223, 0.3);
+}
+#main2{
+  background-color:rgba(231, 223, 223, 0.3);
+}
+#cart-items{
+  margin:0px 300px;
+  background-color: white;
+}
+#cart-summary{
+  margin:0px 300px;
+  background-color: white;
+}
+#promo-code{
+  margin:0px 300px;
+  background-color: white;
+}
+#main1{
+  margin:0px 300px;
+   background-color:  white; 
+}
+.payment-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 27px;
+  background-color: #504d4d;
+  margin-top: 55px;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 10px;
+}
 
 @media (max-width:800px) {
   .nav > .nav-btn {
