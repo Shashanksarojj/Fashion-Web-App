@@ -3,7 +3,7 @@
 }
 
 body {
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Courier New', Courier, monospace;
   margin: 0px;
 }
 
@@ -29,9 +29,9 @@ body {
   border: 2px solid green;
 }
 
-#H1font {
+/* #H1font {
   font-family: "Times New Roman", Times, serif;
-}
+} */
 
 .logo_div {
   width: 20%;
@@ -58,7 +58,7 @@ body {
 .Atitle {
   text-decoration: none;
   color: white;
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
 }
 
 .Atitle:hover{
@@ -70,13 +70,13 @@ body {
   border: none;
   /* backface-visibility: visible; */
   background-color: transparent;
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
   width: 70%;
 }
 
 .Logo_a {
   text-decoration: none;
-  font-family: "Times New Roman", Times, serif;
+  /* font-family: "Times New Roman", Times, serif; */
   color: white;
 }
 
