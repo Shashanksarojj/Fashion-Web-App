@@ -1,4 +1,4 @@
-let prd=document.querySelector(".prd")
+let prd=document.querySelector(".prd1")
 let prc=document.querySelector(".price")
 let qty=document.querySelector(".qty")
 let sprc=document.querySelector(".sprc")
@@ -34,7 +34,7 @@ getData()
   document.querySelector("#main1").innerHTML=null;
   //let td4=0
   for(let i=0;i<arr.length;i++){
-//  prd.value=arr[i].name
+  prd.innerHTML=arr[i].name
     let div=document.createElement("div")
    // let imgdiv=document.createElement("div");
     //for(let j=0;j<arr[i].image.length;j++){
@@ -86,12 +86,12 @@ getData()
     btnN.innerHTML="-"
    
     btnN.addEventListener("click",function(){
-      prc.innerText=arr[i].price
+      prc.innerText=((arr[i].price))
       if( btnNu.innerHTML>1){
-        sprc.innerText=arr[i].price*(+(btnNu.innerHTML)-1)
+        sprc.innerText= (arr[i].price*(+(btnNu.innerHTML)-1))
         td1.innerText=arr[i].price*(+(btnNu.innerHTML)-1)
         td2.innerText= Math.floor((td1.innerText*12)/100)
-        if(td1.innerText<2000){
+        if(td1.innerText<2000){``
           td3.innerText=149
         }else{
           td3.innerText=0
@@ -101,8 +101,9 @@ getData()
         btnNu.innerHTML--
       btn4.textContent = arr[i].price*btnNu.innerHTML
       }
+      if(qty.innerHTML>1){
       qty.innerHTML--
-      
+      }
     })
     let btn3 = document.createElement("button")
     btn3.textContent = "Cancel"
