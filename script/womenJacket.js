@@ -17,8 +17,11 @@ function render(prodata){
          let img=document.createElement("img")
          img.setAttribute("src",element.image[0])
          img.addEventListener("mouseover",()=>{
+            if(element.image.length>1){
            img.setAttribute("src",element.image[1])
+            }
          })
+      
          img.addEventListener("mouseout",()=>{
            img.setAttribute("src",element.image[0])
          })

@@ -132,6 +132,7 @@
     display: grid;
     grid-template-columns: repeat(4,1fr);
     gap: 2px;
+    min-height: 500px;
     margin-top: 5px;
     max-height: 200vh;
     overflow-y: scroll;
