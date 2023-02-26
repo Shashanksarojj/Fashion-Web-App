@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <script src="https://kit.fontawesome.com/e5282033d5.js" crossorigin="anonymous"></script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    
-    
+
+
     <link rel="stylesheet" href="./style/payment.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <title>payment</title>
+    <title>Payment</title>
 </head>
+
 <body>
-    
-    <div id="container_nav" class="flexed">
+
+    <!-- <div id="container_nav" class="flexed">
         <div class="logo_div">
             <button id="LOGO">
                 <a class="Logo_a" href="index.html" class="Logo_a" title="Burberry"
@@ -51,125 +54,153 @@
                 <a class="Atitle" href="./login.html">Login</a>
             </div>
         </nav>
-    </div>
-    <!-- ------------------------Nav End------------------------------------------------- -->
+    </div> -->
 
-
-
-<!-- -----------------------Nav end--------------------------------------------- -->
-<div class="container">
-    <form action="">
-
-        <div class="row">
-
-            <div class="col">
-
-                <h3 class="title">billing address</h3>
-
-                <div class="inputBox">
-                    <span>full name :</span>
-                    <input type="text">
-                </div>
-                <div class="inputBox">
-                    <span>email :</span>
-                    <input type="email">
-                </div>
-                <div class="inputBox">
-                    <span>address :</span>
-                    <input type="text">
-                </div>
-                <div class="inputBox">
-                    <span>city :</span>
-                    <input type="text">
-                </div>
-
-                <div class="flex">
-                    <div class="inputBox">
-                        <span>state :</span>
-                        <input type="text">
-                    </div>
-                    <div class="inputBox">
-                        <span>zip code :</span>
-                        <input type="text" >
-                    </div>
-                </div>
-
+    <div class="nav">
+        <input type="checkbox" id="nav-check">
+        <div class="nav-header">
+            <div class="nav-title" style="opacity:1;transform:none">
+                <a href="index.html">COMPRAS</a>
             </div>
-
-            <div class="col">
-
-                <h3 class="title">payment</h3>
-
-                <div class="inputBox">
-                    <span>cards accepted :</span>
-                    <img src="https://bookmyscans.com/media/wysiwyg/verified_logo.png" alt="">
-                </div>
-                <div class="inputBox">
-                    <span>Enter UPI address :</span>
-                    <input type="text">
-                </div>
-                <P>OR</P>
-                <div class="inputBox">
-                    <span>Name on card:</span>
-                    <input type="text">
-                </div>
-                <div class="inputBox">
-                    <span>Exp month :</span>
-                    <input type="text">
-                </div>
-
-                <div class="flex">
-                    <div class="inputBox">
-                        <span>Exp year :</span>
-                        <input type="number">
-                    </div>
-                    <div class="inputBox">
-                        <span>CVV :</span>
-                        <input type="text">
-                    </div>
-                </div>
-
-            </div>
-    
+        </div>
+        <div class="nav-btn">
+            <label for="nav-check">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
         </div>
 
-        <button class="payment-btn"><a href="index.html">Proceed to payment</a></button>
+        <div class="nav-links">
 
-    </form>
+            <a class="Atitle" href="./women.html">Womens</a>
+            <a class="Atitle" href="./men.html">Men's</a>
+            <a class="Atitle" href="./children.html">Children's</a>
+            <a href="./cart.html">Cart</a>
+            <a class="Atitle" href="./login.html">Login</a>
 
-</div>
+        </div>
 
-  <!---------------------------------------------------------------- Fotter-start ---------------------------------------------------->
-   
 
-  <footer class="footer-section">
-    <div id="div1">
-        <p class="Sing_up">SIGN UP</p>
-        <p class="Sign_up2">Sign up below for updates about the world of Burberry, including
-            collection launches and early access to limited-edition products and collaborations.</p>
-        <!-- <form class="footer_form">
+    </div>
+
+
+
+    <!-- -----------------------Nav end--------------------------------------------- -->
+    <div class="container">
+        <form action="">
+
+            <div class="row">
+
+                <div class="col">
+
+                    <h3 class="title">billing address</h3>
+
+                    <div class="inputBox">
+                        <span>full name :</span>
+                        <input type="text">
+                    </div>
+                    <div class="inputBox">
+                        <span>email :</span>
+                        <input type="email">
+                    </div>
+                    <div class="inputBox">
+                        <span>address :</span>
+                        <input type="text">
+                    </div>
+                    <div class="inputBox">
+                        <span>city :</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>state :</span>
+                            <input type="text">
+                        </div>
+                        <div class="inputBox">
+                            <span>zip code :</span>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="col">
+
+                    <h3 class="title">payment</h3>
+
+                    <div class="inputBox">
+                        <span>cards accepted :</span>
+                        <img src="https://bookmyscans.com/media/wysiwyg/verified_logo.png" alt="">
+                    </div>
+                    <div class="inputBox">
+                        <span>Enter UPI address :</span>
+                        <input type="text">
+                    </div>
+                    <P>OR</P>
+                    <div class="inputBox">
+                        <span>Name on card:</span>
+                        <input type="text">
+                    </div>
+                    <div class="inputBox">
+                        <span>Exp month :</span>
+                        <input type="text">
+                    </div>
+
+                    <div class="flex">
+                        <div class="inputBox">
+                            <span>Exp year :</span>
+                            <input type="number">
+                        </div>
+                        <div class="inputBox">
+                            <span>CVV :</span>
+                            <input type="text">
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <button class="payment-btn"><a href="index.html">Proceed to payment</a></button>
+
+        </form>
+
+    </div>
+
+    <!---------------------------------------------------------------- Fotter-start ---------------------------------------------------->
+
+
+    <footer class="footer-section">
+        <div id="div1">
+            <p class="Sing_up">SIGN UP</p>
+            <p class="Sign_up2">Sign up below for updates about the world of Burberry, including
+                collection launches and early access to limited-edition products and collaborations.</p>
+            <!-- <form class="footer_form">
             <input type="email" name="signup-email" value="" aria-label="Email" aria-invalid="false"
                 class="footer_input">
             <span class="">Email</span>
         </form> -->
 
-        <a href = "mailto: customersupport@CompFrat.Tech">Send Email :- customersupport@Compras.Tech </a>
-    </div>
-    <div id="div2">
-        <p class="Sing_up">STORE LOCATOR</p>
-    </div>
-    <div id="div3">
-        <p class="Sing_up">CUSTOMER SERVICE</p>
-        <p class="Sing_up">LEGAL AND COOKIE</p>
-        <p class="Sing_up">OUR COMPANY</p>
-    </div>
-    <div id="div4">
-        <p class="Sing_up">LANGUAGE <br> English</p>
-        <p class="Sing_up">SHIPPING TO</p>
-    </div>
+            <a href="mailto: customersupport@CompFrat.Tech">Send Email :- customersupport@Compras.Tech </a>
+        </div>
+        <div id="div2">
+            <p class="Sing_up">STORE LOCATOR</p>
+        </div>
+        <div id="div3">
+            <p class="Sing_up">CUSTOMER SERVICE</p>
+            <p class="Sing_up">LEGAL AND COOKIE</p>
+            <p class="Sing_up">OUR COMPANY</p>
+        </div>
+        <div id="div4">
+            <p class="Sing_up">LANGUAGE <br> English</p>
+            <p class="Sing_up">SHIPPING TO</p>
+        </div>
 
-</footer>
+    </footer>
 
 
 </body>
+
 </html>

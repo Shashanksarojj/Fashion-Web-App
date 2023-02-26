@@ -66,10 +66,11 @@
 .nav {
   /* height: 50px; */
   
+  
   padding: 2%;
   padding-bottom: 1%;
   /* width: 97%; */
-  color: #b90c0c;
+  color: #edeaea;
   background-color: #504d4d;
   position: relative;
   /* text-align: ; */
@@ -89,7 +90,7 @@
 .nav > .nav-header > .nav-title {
   display: inline-block;
   font-size: 35px;
-  color: #cd1212;
+  /* color: #cd1212; */
   /* padding: 10px 10px 10px 10px; */
 }
 
