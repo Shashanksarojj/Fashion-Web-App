@@ -236,6 +236,26 @@ hr {
     /* width: calc(100% - 300px); */
 
 }
+#hbtn {
+    display: block;
+    margin: auto;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-left: 900px;
+    padding: 5px 10px;
+    color: #111827;
+    font-weight: 600;
+    background-color: rgb(121, 106, 255);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    
+    /* position: relative; */
+    /* z-index: 5px; */
+    /* position: absolute; */
+    /* width: calc(100% - 300px); */
+
+}
 
 .i-name {
     color: #444a53;
@@ -427,6 +447,20 @@ tbody tr td {
     #btn {
         display: block;
         margin: auto;
+        /* margin-left: 970px; */
+        padding: 5px 10px;
+        color: #111827;
+        font-weight: 600;
+        background-color: chartreuse;
+        border: none;
+        border-radius: 4px;
+        position: relative;
+
+    }
+    #hbtn {
+        display: block;
+        margin: auto;
+        margin-bottom: 10px
         /* margin-left: 970px; */
         padding: 5px 10px;
         color: #111827;
