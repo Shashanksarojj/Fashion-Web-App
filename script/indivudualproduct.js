@@ -12,7 +12,8 @@ for(let i=0;i<add.length;i++){
     }
 }
 
-addtocart.addEventListener("click",()=>{
+addtocart.addEventListener("click",(e)=>{
+    e.preventDefault()
     console.log(add.length)
     let x=false;
     if(add.length==0){

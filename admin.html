@@ -11,6 +11,7 @@
   <title>Admin Page</title>
   <link rel="stylesheet" href="./style/admin.css">
   <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> 
 
 </head>
 
@@ -24,11 +25,12 @@
     </div>
 
     <div class="items">
-      <li><i class="fa-solid fa-chart-pie"></i><a href="#">Dashboard</a></li>
-      <li><i class="fa-solid fa-rotate-right"></i><a href="#">Elements</a></li>
-      <li><i class="fa-solid fa-table"></i><a href="#">Table</a></li>
-      <li><i class="fa-brands fa-wpforms"></i><a href="#">Forms</a></li>
-      <li><i class="fa-regular fa-credit-card"></i><a href="#">Card</a></li>
+      <li><i class="fa-solid fa-chart-pie"></i><a href="./admin.html">Dashboard</a></li>
+      <li><i class="fa-solid fa-rotate-right"></i><a href="#">Returns</a></li>
+      <li><i class="fa-solid fa-file-invoice-dollar"></i><a href="#">Payments</a></li>
+      <li><i class="fa-brands fa-wpforms"></i><a href="#">Inventory</a></li>
+      <li><i class="fa-regular fa-credit-card"></i><a href="./analytics.html">Analytics</a></li>
+      <li><i class="fa-sharp fa-solid fa-headset"></i><a href="#">Support</a></li>
       <hr>
       <li> <i class="fa-solid fa-right-from-bracket"></i><a href="#">Logout</a></li>
 
@@ -50,10 +52,12 @@
         <div>
           <i id="menu-btn" class="fa-brands fa-usb "></i>
         </div>
-        <div class="search">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <input type="text" placeholder="Search products">
-        </div>
+        <form>
+          <div class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" placeholder="Search products" id="searchinp">
+          </div>
+        </form>
       </div>
 
       <div class="profile">
@@ -73,20 +77,25 @@
     </h3>
 
     <button id="btn">+ Add Product</button>
+    <button class="counter">Click</button>
 
     <div class="values">
       <div class="val-box">
         <i class="fa-solid fa-users"></i>
+
+
+
+
         <div>
-          <h3>8,267</h3>
-          <span>New Users</span>
+          <h3 id="o-stock">0</h3>
+          <span>Out of Stock</span>
         </div>
 
       </div>
       <div class="val-box">
         <i class="fa-solid fa-cart-shopping"></i>
         <div>
-          <h3>8,267</h3>
+          <h3 id="total-orders">0</h3>
           <span>Total Orders</span>
         </div>
 
@@ -102,8 +111,8 @@
       <div class="val-box">
         <i class="fa-sharp fa-solid fa-dollar-sign"></i>
         <div>
-          <h3>8,267</h3>
-          <span>Total Earnings</span>
+          <h3 id="s-count">5</h3> 
+          <span>Stock Count</span>
         </div>
 
       </div>
@@ -132,8 +141,8 @@
         <!-- <form > -->
         <!-- <label for="otp">Enter ID</label> -->
 
-        <input type="text" placeholder="Enter ID" id="id" required >
-        <label for="otp">Enter Category</label>
+        <input type="text" placeholder="Enter ID" id="id" required>
+        <!-- <label for="otp">Enter Category</label> -->
 
         <input type="text" placeholder="Enter Category" id="category" required>
 

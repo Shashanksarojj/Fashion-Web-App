@@ -1,4 +1,4 @@
-let form=document.querySelector("form");
+let form=document.querySelector("#form-signup");
 let memberData=JSON.parse(localStorage.getItem("account-data"))||[];
 form.addEventListener("submit",function(e){
   e.preventDefault()
@@ -17,3 +17,4 @@ localStorage.setItem("account-data",JSON.stringify(memberData));
 alert("Register successfully");
 window.location="login.html";
 })
+console.log(form)

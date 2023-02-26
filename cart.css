@@ -146,10 +146,20 @@ table {
     padding: 16px 32px;
   
   }
-  /* #main1{
+  #main1{
+   
+    display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 10px;
    
+  }
+  #main1>div>img{
+    height: 300px;
+    width: 300px;
+  }
+  /* #main1>div{
+    height: 300px;
+    width: 300px;
   } */
 
 

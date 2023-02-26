@@ -30,7 +30,9 @@ function render(prodata){
          pricediv.setAttribute("class","pricediv")
          let price=document.createElement("h5")
          price.innerText=`$ ${element.price}`
-         pricediv.append(price)
+         let rating=document.createElement("h6")
+         rating.innerText=`rating ${element.rating}`
+         pricediv.append(price,rating)
           
          card.addEventListener("click",()=>{
                  localStorage.setItem("element",element.id)
@@ -78,6 +80,7 @@ sort.addEventListener("click",()=>{
    console.log(count)
    if(count%2!==0){
       down.classList.add("rotate180")
+      sort.classList.add("colorchange")
    let sortdiv=document.createElement("div")
    sortdiv.setAttribute("id","sortdiv")
    let deflt=document.createElement("h4")
@@ -110,6 +113,7 @@ sort.addEventListener("click",()=>{
    else{
       sortchild.innerHTML=null
       down.classList.remove("rotate180")
+      sort.classList.remove("colorchange")
      
    }
 })
@@ -122,6 +126,7 @@ filter.addEventListener("click",()=>{
    count1++
    console.log(count)
    if(count1%2!==0){
+      filter.classList.add("colorchange")
       downtwo.classList.add("rotate180")
    let filterdiv=document.createElement("div")
    filterdiv.setAttribute("id","tagfilterdiv")
@@ -160,9 +165,11 @@ filter.addEventListener("click",()=>{
    else{
       filterchild.innerHTML=null
       downtwo.classList.remove("rotate180")
+      filter.classList.remove("colorchange")
    }
 
 })
+// mobile screenfilter...........................
 let mobile=document.getElementById("mobile")
 let mobilechild=document.getElementById("mobilechild")
 let count3=0
@@ -240,4 +247,77 @@ mobile.addEventListener("click",()=>{
    else{
       mobilechild.innerHTML=null
    }
+})
+
+// filterby ratinh...............
+let rating=document.getElementById("rating")
+let ratingchild=document.getElementById("ratingchild")
+let count6=0
+rating.addEventListener("click",()=>{
+   count6++
+   // console.log()
+   if(count6%2!==0){
+      rating.classList.add("colorchange")
+      downtwo.classList.add("rotate180")
+   let ratingdiv=document.createElement("div")
+   ratingdiv.setAttribute("id","ratingdiv")
+   let ratingone=document.createElement("h4")
+      ratingone.setAttribute("class","ratingtext")
+      ratingone.innerText="4 star"
+   let ratingtwo=document.createElement("h4")
+   ratingtwo.setAttribute("class","ratingtext")
+   let ratingthree=document.createElement("h4")
+   ratingthree.setAttribute("class","ratingtext")
+   ratingtwo.innerText="3 star"
+    ratingthree.innerText="2 star"
+    let ratingfour=document.createElement("h4")
+      ratingfour.setAttribute("class","ratingtext")
+      ratingfour.innerText="1 star" 
+    let ratingdefault=document.createElement("h4")
+      ratingdefault.setAttribute("class","ratingtext")
+      ratingdefault.innerText="default"
+   // default dom..........
+   ratingdefault.addEventListener("click",()=>{
+      console.log("yes")
+       render(products)
+   })
+   // filter 4 star........................
+   ratingone.addEventListener("click",()=>{
+      console.log("g")
+      let filterd_data = products.filter((ele)=>{
+         return ele.rating >= 4
+     })
+     render(filterd_data)
+   })
+   // filter 3 star.........................
+   ratingtwo.addEventListener("click",()=>{
+      let filterd_data = products.filter((ele)=>{
+         return ele.rating >=3 &&ele.rating<4
+     })
+     render(filterd_data)
+   })
+   // filter 2 star.........................
+   ratingthree.addEventListener("click",()=>{
+      let filterd_data = products.filter((ele)=>{
+         return ele.rating >=2&&ele.rating<3
+     })
+     render(filterd_data)
+   })
+   // filter 1 star.........................
+   ratingfour.addEventListener("click",()=>{
+      let filterd_data = products.filter((ele)=>{
+         return ele.rating >=1&&ele.rating<2
+     })
+     render(filterd_data)
+   })
+   
+   ratingdiv.append(ratingdefault,ratingfour,ratingthree,ratingtwo,ratingone)
+   ratingchild.append(ratingdiv)
+   }
+   else{
+      ratingchild.innerHTML=null
+      downtwo.classList.remove("rotate180")
+      rating.classList.remove("colorchange")
+   }
+
 })

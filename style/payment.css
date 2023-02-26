@@ -1,0 +1,207 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+
+#container_nav{
+    display: flex;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 99.5%;
+    color: #000;
+    margin: auto;
+}
+.logo_div{
+    width: 30%;
+    margin-left: 2%;
+    /* border: 2px solid rgb(242, 9, 9); */
+}
+#nav{
+    display: flex;
+    justify-content: space-around;
+    width: 70%;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    align-items: center;
+}
+.flexed{
+    display: flex;
+    /* justify-content: center; */
+}
+
+.Atitle{
+    text-decoration: none;
+}
+
+#LOGO{
+    border: none;
+    /* backface-visibility: visible; */
+    background-color: transparent;
+    font-family: 'Styrene',Helvetica,Arial,sans-serif;
+    width: 70%;
+}
+
+.Logo_a{
+    text-decoration: none;
+    font-family: 'Times New Roman', Times, serif;
+   
+}
+
+.fa-solid{
+  position: relative;
+  right: 104px;
+}
+
+
+
+
+
+
+
+/*-------------------------------------- Nav end --------------------------------------------------------*/
+.container form{
+  padding:20px;
+  width:85%;
+  border-radius: 6px;
+  margin: auto;
+  background: #fff;
+  background-color: #f7f7f7;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  height: 700px;
+  margin-top: 100px;
+  padding-top: 30px;
+  outline: none;
+}
+
+.container form .row{
+  display: flex;
+  flex-wrap: wrap;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  gap:15px;
+  outline: none;
+}
+
+.container form .row .col{
+  flex:1 1 250px;
+  outline: none;
+}
+
+.container form .row .col .title{
+  font-size: 20px;
+  color:#333;
+  outline: none;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.container form .row .col .inputBox{
+  margin:15px 0;
+  outline: none;
+}
+
+.container form .row .col .inputBox span{
+  margin-bottom: 10px;
+  display: block;
+  outline: none;
+}
+
+.container form .row .col .inputBox input{
+  width: 100%;
+  border:1px solid #ccc;
+  padding:10px 15px;
+  font-size: 15px;
+  outline: none;
+  text-transform: none;
+}
+
+.container form .row .col .inputBox input:focus{
+  border:1px solid #000;
+  outline: none;
+}
+
+.container form .row .col .flex{
+  display: flex;
+  outline: none;
+  gap:15px;
+}
+
+.container form .row .col .flex .inputBox{
+  margin-top: 5px;
+  outline: none;
+}
+
+.container form .row .col .inputBox img{
+  height: 34px;
+  margin-top: 5px;
+  filter: drop-shadow(0 0 1px #000);
+  outline: none;
+}
+
+.payment-btn{
+  width: 100%;
+  padding:12px;
+  font-size: 17px;
+  background: #222121;
+  margin-top: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+/* -----------------------Footer start--------------------- */
+
+.footer-section {
+    display: flex;
+    justify-content: left;
+    border-top: 1px solid rgb(95, 91, 91);
+    /* background-color: rgb(180, 180, 178); */
+    margin-bottom: 30px;
+    margin-top: 11%;
+    padding-top: 0.2rem;
+    font-size: 18px;
+    margin-left: 0%;
+    height: 260px;
+    vertical-align: baseline;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* border: 2px solid red; */
+    background-color: #f7f7f7;
+  }
+  .footer-section p{
+    font-size: 17px;
+  }
+  #div1{
+    padding: 1%;
+    /* border: 2px solid red; */
+    width: 25%;
+    font-size: 20px;
+    /* border: 2px solid red; */
+  }
+
+
+  #div2{
+    padding: 1%;
+    /* border: 2px solid rgb(86, 193, 238); */
+    width: 25%;
+    font-size: 20px;
+  }
+
+
+  #div3{
+    padding: 1%;
+    /* border: 2px solid rgb(209, 234, 23); */
+    width: 25%;
+    font-size: 200px;
+  }
+
+  #div4{
+    padding: 1%;
+    /* border: 2px solid rgb(41, 2, 9); */
+    width: 25%;
+    font-size: 20px;
+  }
+
+  .Sing_up{
+    font-size: 1rem;
+  }
+
+  .Sing_up2{
+    font-size: .6rem;
+  }

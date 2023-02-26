@@ -231,7 +231,7 @@ form {
     margin-top: 20px;
     font-size: 18px;
   }
-form input {
+  form input {
     width: 98.5%; 
     padding: 7px;
     height: 22px;
@@ -254,6 +254,7 @@ form input {
     border: none;
     background-color: #000000;
     color: white;
+    cursor: pointer;
     font-size: 18px;
   }
   #term{
