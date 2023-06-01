@@ -7,13 +7,13 @@ api we used
 https://63f4671c3f99f5855daeb266.mockapi.io/products
 
 pages 
-1 home page,\n 
-3 login page,\n
-3 product page,\n
-4 individual product page,\n
-5 cart page,\n
-6 payment page,\n
-7 admin page,\n
+1 home page,
+3 login page,
+3 product page,
+4 individual product page,
+5 cart page,
+6 payment page,
+7 admin page,
 
 
 
