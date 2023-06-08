@@ -9,14 +9,14 @@ The website is designed with a sleek and modern aesthetic, featuring high-qualit
 
 ![Screenshot (35)](https://github.com/sourabhkt1997/haloed-haircut-8824/assets/115461797/6eaadd12-8988-47fe-9c0e-f3871464a6a3)
 
-pages 
-1 home page, 
-3 login page,
-3 product page,
-4 individual product page,
-5 cart page,
-6 payment page,
-7 admin page,
+Pages :
+ 1 home page, 
+ 2 login page,
+ 3 product page,
+ 4 individual product page,
+ 5 cart page,
+ 6 payment page,
+ 7 admin page,
 
 Tech Stack - HTML | CSS | JAVASCRIPT | NODE JS | EXPRESS JS | MONGO DB
 
@@ -39,6 +39,8 @@ Dashboard: The admin panel would typically have a dashboard that provides an ove
 Product Management: The admin panel would include a dedicated section for managing products. Administrators can perform CRUD operations (Create, Read, Update, Delete) to add new products, view existing ones, update product details (e.g., title, description, price, availability), and delete products if necessary.
 
 ![Screenshot (40)](https://github.com/sourabhkt1997/haloed-haircut-8824/assets/115461797/42cc79ae-4a90-4096-bdcc-c93961f22681)
+
+Deployed Link : https://cool-kleicha-bf4c6e.netlify.app/
 
 
 
